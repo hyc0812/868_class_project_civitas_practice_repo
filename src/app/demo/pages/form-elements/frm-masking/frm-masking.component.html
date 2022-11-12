@@ -1,0 +1,98 @@
+<div class="row">
+  <div class="col-sm-3">
+    <app-card cardTitle="Date" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Date Formate is DD/MM/YYYY</label>
+      <input matInput mask="00/00/0000" [showMaskTyped]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Date And Time" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Date And Time DD/MM/YYYY HH:MM:SS</label>
+      <input matInput mask="00/00/00 00:00:00" [showMaskTyped]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Hour" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Hour Formate is HH:MM:SS</label>
+      <input matInput mask="00:00:00" [showMaskTyped]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="24 Hour" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">24 Hour Formate is HH:MM:SS</label>
+      <input matInput mask="Hh:m0:s0" [showMaskTyped]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Mixed Type" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Mixed Type Formate AAA 000-S0S</label>
+      <input matInput mask="AAA 000-S0S" [showMaskTyped]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Valid Date And Month" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Valid Date And Month Formate DD/MM/YYYY</label>
+      <input matInput mask="d0/M0/0000" [showMaskTyped]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Prefix" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Prefix Formate </label>
+      <input type="text" prefix="+75 " mask="(000) 000 00 00" [showMaskTyped]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Suffix" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Suffix Formate</label>
+      <input type="text" suffix=" $" mask="0000" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Thousand separator" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Thousand Separator Formate</label>
+      <input type="text" mask="separator" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle=" Dot separator" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark"> Dot Separator Formate</label>
+      <input type="text" mask="separator" thousandSeparator="." />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Comma separator" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Comma separator Formate</label>
+      <input type="text" mask="separator" thousandSeparator="," />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle=" Secure input" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark"> Secure input Formate</label>
+      <input [hiddenInput]="true" mask="XXX/X0/0000" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Lead Zero Date Time" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">Lead Zero Date Time Formate</label>
+      <input type="text" mask="d0/M0/0000" [leadZeroDateTime]="true" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="IP" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">IP Address Formate</label>
+      <input mask="IP" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Special Characters" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">special Characters Formate [00]\[000]</label>
+      <input type="text" [specialCharacters]="['[', ']', '\\']" mask="[00]\[000]" />
+    </app-card>
+  </div>
+  <div class="col-sm-3">
+    <app-card cardTitle="Special Characters 2" [options]="false">
+      <label class="mb-2 px-2 h6 fw-bold text-dark">special Characters 2</label>
+      <input type="text" [patterns]="customPatterns" mask="(000-000)" />
+    </app-card>
+  </div>
+</div>

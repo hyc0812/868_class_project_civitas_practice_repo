@@ -1,0 +1,86 @@
+.form-group label {
+  color: #666;
+}
+.form-check .form-check-input.input-primary:checked {
+  border-color: #04a9f5;
+  background-color: #04a9f5;
+}
+.form-check .form-check-input.input-secondary:checked {
+  border-color: #748892;
+  background-color: #748892;
+}
+.form-check .form-check-input.input-success:checked {
+  border-color: #1de9b6;
+  background-color: #1de9b6;
+}
+.form-check .form-check-input.input-danger:checked {
+  border-color: #f44236;
+  background-color: #f44236;
+}
+.form-check .form-check-input.input-warning:checked {
+  border-color: #f4c22b;
+  background-color: #f4c22b;
+}
+.form-check .form-check-input.input-info:checked {
+  border-color: #3ebfea;
+  background-color: #3ebfea;
+}
+.form-check .form-check-input.input-dark:checked {
+  border-color: #37474f;
+  background-color: #37474f;
+}
+
+.form-check .form-check-input.input-light-primary:checked {
+  border-color: #cdeefd;
+  background-color: #cdeefd;
+}
+.form-check .form-check-input.input-light-secondary:checked {
+  border-color: #e3e7e9;
+  background-color: #e3e7e9;
+}
+.form-check .form-check-input.input-light-success:checked {
+  border-color: #d2fbf0;
+  background-color: #d2fbf0;
+}
+.form-check .form-check-input.input-light-danger:checked {
+  border-color: #fdd9d7;
+  background-color: #fdd9d7;
+}
+.form-check .form-check-input.input-light-warning:checked {
+  border-color: #fdf3d5;
+  background-color: #fdf3d5;
+}
+.form-check .form-check-input.input-light-info:checked {
+  border-color: #d8f2fb;
+  background-color: #d8f2fb;
+}
+.form-check .form-check-input.input-light-dark:checked {
+  border-color: #d7dadc;
+  background-color: #d7dadc;
+}
+
+.form-check .form-check-input.input-light-primary:checked[type='checkbox'] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjMDRhOWY1JyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMycgZD0nTTYgMTBsMyAzbDYtNicvPjwvc3ZnPg==);
+}
+.form-check .form-check-input.input-light-secondary:checked[type='checkbox'] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjNzQ4ODkyJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMycgZD0nTTYgMTBsMyAzbDYtNicvPjwvc3ZnPg==);
+}
+.form-check .form-check-input.input-light-success:checked[type='checkbox'] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjMWRlOWI2JyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMycgZD0nTTYgMTBsMyAzbDYtNicvPjwvc3ZnPg==);
+}
+.form-check .form-check-input.input-light-danger:checked[type='checkbox'] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjZjQ0MjM2JyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMycgZD0nTTYgMTBsMyAzbDYtNicvPjwvc3ZnPg==);
+}
+.form-check .form-check-input.input-light-warning:checked[type='checkbox'] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjZjRjMjJiJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMycgZD0nTTYgMTBsMyAzbDYtNicvPjwvc3ZnPg==);
+}
+.form-check .form-check-input.input-light-info:checked[type='checkbox'] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjM2ViZmVhJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMycgZD0nTTYgMTBsMyAzbDYtNicvPjwvc3ZnPg==);
+}
+.form-check .form-check-input.input-light-dark:checked[type='checkbox'] {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAyMCAyMCc+PHBhdGggZmlsbD0nbm9uZScgc3Ryb2tlPScjMzc0NzRmJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnIHN0cm9rZS13aWR0aD0nMycgZD0nTTYgMTBsMyAzbDYtNicvPjwvc3ZnPg==);
+}
+
+.switch {
+  border: none;
+}

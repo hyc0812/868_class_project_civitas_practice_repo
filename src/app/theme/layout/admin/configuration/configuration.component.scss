@@ -1,0 +1,40 @@
+.menu-styler {
+  .nav-pills {
+    margin-bottom: 8px;
+    box-shadow: none;
+  }
+}
+
+.nav-3 {
+  color: #fff;
+  background: #04a9f5;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 20%);
+  border-radius: 5px;
+  border: none;
+  display: block;
+  padding: 10px 24px;
+}
+body.datta-dark {
+  .menu-styler {
+    .tab-content {
+      background: rgba(4, 169, 245, 0.03);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p,
+    h6 {
+      color: #222;
+    }
+  }
+}
+
+.switch {
+  border: none;
+}
+
+.menu-styler .tab-content {
+  padding: 15px 0 15px 0;
+}

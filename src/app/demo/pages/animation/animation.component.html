@@ -1,0 +1,1303 @@
+<div [@enter2] class="center-children-horizontally">
+  <div class="row">
+    <div class="col-sm-12">
+      <app-card cardTitle="Attention Seekers">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounce]="animationState['bounce']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounce')"
+              >
+                Bounce
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@flash]="animationState['flash']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('flash')"
+              >
+                Flash
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@pulse]="animationState['pulse']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('pulse')"
+              >
+                Pulse
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rubberBand]="animationState['rubberBand']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rubberBand')"
+              >
+                RubberBand
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@shake]="animationState['shake']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('shake')"
+              >
+                Shake
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@swing]="animationState['swing']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('swing')"
+              >
+                Swing
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@tada]="animationState['tada']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('tada')"
+              >
+                Tada
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@wobble]="animationState['wobble']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('wobble')"
+              >
+                Wobble
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@jello]="animationState['jello']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('jello')"
+              >
+                Jello
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Bouncing Entrances">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceIn]="animationState['bounceIn']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceIn')"
+              >
+                BounceIn
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceInDown]="animationState['bounceInDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceInDown')"
+              >
+                BounceInDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceInLeft]="animationState['bounceInLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceInLeft')"
+              >
+                BounceInLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceInRight]="animationState['bounceInRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceInRight')"
+              >
+                BounceInRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceInUp]="animationState['bounceInUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceInUp')"
+              >
+                BounceInUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Bouncing Exits">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceOut]="animationState['bounceOut']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceOut')"
+              >
+                BounceOut
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceOutDown]="animationState['bounceOutDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceOutDown')"
+              >
+                BounceOutDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceOutLeft]="animationState['bounceOutLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceOutLeft')"
+              >
+                BounceOutLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceOutRight]="animationState['bounceOutRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceOutRight')"
+              >
+                BounceOutRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@bounceOutUp]="animationState['bounceOutUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('bounceOutUp')"
+              >
+                BounceOutUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Fading Entrances">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeIn]="animationState['fadeIn']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeIn')"
+              >
+                FadeIn
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInDown]="animationState['fadeInDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInDown')"
+              >
+                FadeInDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInDownBig]="animationState['fadeInDownBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInDownBig')"
+              >
+                FadeInDownBig
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInLeft]="animationState['fadeInLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInLeft')"
+              >
+                FadeInLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInLeftBig]="animationState['fadeInLeftBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInLeftBig')"
+              >
+                FadeInLeftBig
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInRight]="animationState['fadeInRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInRight')"
+              >
+                FadeInRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInRightBig]="animationState['fadeInRightBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInRightBig')"
+              >
+                FadeInRightBig
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInUp]="animationState['fadeInUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInUp')"
+              >
+                FadeInUp
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeInUpBig]="animationState['fadeInUpBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeInUpBig')"
+              >
+                FadeInUpBig
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Fading Exits">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOut]="animationState['fadeOut']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOut')"
+              >
+                FadeOut
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutDown]="animationState['fadeOutDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutDown')"
+              >
+                FadeOutDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutDownBig]="animationState['fadeOutDownBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutDownBig')"
+              >
+                FadeOutDownBig
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutLeft]="animationState['fadeOutLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutLeft')"
+              >
+                FadeOutLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutLeftBig]="animationState['fadeOutLeftBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutLeftBig')"
+              >
+                FadeOutLeftBig
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutRight]="animationState['fadeOutRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutRight')"
+              >
+                FadeOutRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutRightBig]="animationState['fadeOutRightBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutRightBig')"
+              >
+                FadeOutRightBig
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutUp]="animationState['fadeOutUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutUp')"
+              >
+                FadeOutUp
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@fadeOutUpBig]="animationState['fadeOutUpBig']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('fadeOutUpBig')"
+              >
+                FadeOutUpBig
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Flippers">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@flip]="animationState['flip']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('flip')"
+              >
+                Flip
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@flipInX]="animationState['flipInX']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('flipInX')"
+              >
+                FlipInX
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@flipInY]="animationState['flipInY']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('flipInY')"
+              >
+                FlipInY
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@flipOutX]="animationState['flipOutX']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('flipOutX')"
+              >
+                FlipOutX
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@flipOutY]="animationState['flipOutY']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('flipOutY')"
+              >
+                FlipOutY
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Light speed">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@lightSpeedIn]="animationState['lightSpeedIn']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('lightSpeedIn')"
+              >
+                LightSpeedIn
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@lightSpeedOut]="animationState['lightSpeedOut']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('lightSpeedOut')"
+              >
+                LightSpeedOut
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Rotating Entrances">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateIn]="animationState['rotateIn']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateIn')"
+              >
+                RotateIn
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateInDownLeft]="animationState['rotateInDownLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateInDownLeft')"
+              >
+                RotateInDownLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateInDownRight]="animationState['rotateInDownRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateInDownRight')"
+              >
+                RotateInDownRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateInUpLeft]="animationState['rotateInUpLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateInUpLeft')"
+              >
+                RotateInUpLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateInUpRight]="animationState['rotateInUpRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateInUpRight')"
+              >
+                RotateInUpRight
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Rotating Exits">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateOut]="animationState['rotateOut']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateOut')"
+              >
+                RotateOut
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateOutDownLeft]="animationState['rotateOutDownLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateOutDownLeft')"
+              >
+                RotateOutDownLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateOutDownRight]="animationState['rotateOutDownRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateOutDownRight')"
+              >
+                RotateOutDownRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateOutUpLeft]="animationState['rotateOutUpLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateOutUpLeft')"
+              >
+                RotateOutUpLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rotateOutUpRight]="animationState['rotateOutUpRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rotateOutUpRight')"
+              >
+                RotateOutUpRight
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Sliding Entrances">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideInUp]="animationState['slideInUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideInUp')"
+              >
+                SlideInUp
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideInDown]="animationState['slideInDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideInDown')"
+              >
+                SlideInDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideInLeft]="animationState['slideInLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideInLeft')"
+              >
+                SlideInLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideInRight]="animationState['slideInRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideInRight')"
+              >
+                SlideInRight
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Sliding Exits">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideOutUp]="animationState['slideOutUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideOutUp')"
+              >
+                SlideOutUp
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideOutDown]="animationState['slideOutDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideOutDown')"
+              >
+                SlideOutDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideOutLeft]="animationState['slideOutLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideOutLeft')"
+              >
+                SlideOutLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@slideOutRight]="animationState['slideOutRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('slideOutRight')"
+              >
+                SlideOutRight
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Zooming Entrances">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomIn]="animationState['zoomIn']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomIn')"
+              >
+                ZoomIn
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomInDown]="animationState['zoomInDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomInDown')"
+              >
+                ZoomInDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomInLeft]="animationState['zoomInLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomInLeft')"
+              >
+                ZoomInLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomInRight]="animationState['zoomInRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomInRight')"
+              >
+                ZoomInRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomInUp]="animationState['zoomInUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomInUp')"
+              >
+                ZoomInUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="zooming Exits">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomOut]="animationState['zoomOut']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomOut')"
+              >
+                zoomOut
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomOutDown]="animationState['zoomOutDown']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomOutDown')"
+              >
+                zoomOutDown
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomOutLeft]="animationState['zoomOutLeft']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomOutLeft')"
+              >
+                zoomOutLeft
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomOutRight]="animationState['zoomOutRight']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomOutRight')"
+              >
+                zoomOutRight
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@zoomOutUp]="animationState['zoomOutUp']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('zoomOutUp')"
+              >
+                zoomOutUp
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+
+    <div class="col-sm-12">
+      <app-card cardTitle="Specials">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@hinge]="animationState['hinge']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('hinge')"
+              >
+                Hinge
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@jackInTheBox]="animationState['jackInTheBox']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('jackInTheBox')"
+              >
+                JackInTheBox
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rollIn]="animationState['rollIn']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rollIn')"
+              >
+                RollIn
+              </button>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <img alt="" src="assets/images/product/prod-1.jpg" [@rollOut]="animationState['rollOut']" />
+            <div class="text-center">
+              <button
+                [@hueButton]="hueBtnState"
+                (@hueButton.done)="hueBtnState = !hueBtnState"
+                mat-stroked-button
+                color="primary"
+                class="animate-btn mt-2 mb-4"
+                (click)="animate('rollOut')"
+              >
+                RollOut
+              </button>
+            </div>
+          </div>
+        </div>
+      </app-card>
+    </div>
+  </div>
+</div>

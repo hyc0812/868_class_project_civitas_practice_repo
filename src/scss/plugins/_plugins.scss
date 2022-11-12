@@ -1,0 +1,68 @@
+/*@import "~fullcalendar/dist/fullcalendar.min.css";*/
+// @import "~tinymce/skins/lightgray/skin.min.css";
+// @import "~tinymce/skins/lightgray/content.min.css";
+/*@import "~ng2-toasty/style-default.css";
+@import "~ng2-toasty/style-bootstrap.css";
+@import "~ng2-toasty/style-material.css";*/
+
+.material {
+  @import '~ng-snotify/styles/material';
+}
+.simple {
+  @import '~ng-snotify/styles/simple';
+}
+.dark {
+  @import '~ng-snotify/styles/dark';
+}
+
+@import '~angular-archwizard/styles/archwizard.css';
+
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+@import 'ngx-perfect-scrollbar';
+@import 'adv-notification';
+@import 'css-animator';
+@import 'angular-morris-js';
+@import 'angular-pell';
+@import 'ks-modal-gallery';
+@import 'angular-6-datatable';
+@import 'angular-datatables';
+@import 'ngx-chips';
+@import 'angular-archwizard';
+@import 'ng-select';
+@import 'ng-fullcalendar';
+.dataTables_wrapper .dataTables_length {
+  margin-bottom: 15px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  padding: 10px 0;
+}
+
+.dataTables_wrapper .dataTables_info {
+  padding: 20px 0;
+}
+
+body.datta-dark {
+  .table {
+    --bs-table-striped-color: $dark-layout-font;
+    color: $dark-layout-font;
+  }
+  mark,
+  .mark {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: $dark-layout-font;
+  }
+}
+
+app-frm-masking input {
+  width: 100% !important;
+  padding: 5px 20px;
+  background: #f4f7fa;
+  outline: none;
+  border: 1px solid #ced4da;
+}
+
+dp-day-calendar .dp-weekdays {
+  font-size: 13px !important;
+}

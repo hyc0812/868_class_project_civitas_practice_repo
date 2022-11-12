@@ -1,0 +1,226 @@
+<div class="dp-page-content">
+  <div class="row">
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('minValidation')" class="dp-option">
+        <app-card cardTitle="Min-Date Validation (minDate)" [options]="false">
+          <div class="">
+            <div class="dp-option-playground">
+              <dp-date-picker
+                [config]="{ format: localFormat }"
+                [formControl]="minValidation"
+                [mode]="pickerMode.startsWith('daytime') ? 'daytime' : 'day'"
+                id="minDatePicker"
+                placeholder="Select a min date"
+                theme="dp-material"
+              >
+              </dp-date-picker>
+            </div>
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('maxValidation')" class="dp-option">
+        <app-card cardTitle="Max-Date Validation (maxDate)" [options]="false">
+          <div class="">
+            <div class="dp-option-playground">
+              <dp-date-picker
+                [config]="{ format: localFormat }"
+                [formControl]="maxValidation"
+                [mode]="pickerMode.startsWith('daytime') ? 'daytime' : 'day'"
+                id="maxDatePicker"
+                placeholder="Select a max date"
+                theme="dp-material"
+              >
+              </dp-date-picker>
+            </div>
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div *ngIf="isValidConfig('displayDate')" class="dp-option">
+        <app-card cardTitle="Display Date (displayDate)" [options]="false">
+          <div class="dp-option-playground">
+            <dp-date-picker
+              [formControl]="displayDate"
+              id="displayDate"
+              mode="day"
+              placeholder="Select a display date"
+              theme="dp-material"
+            >
+            </dp-date-picker>
+          </div>
+        </app-card>
+      </div>
+    </div> -->
+
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('theme')" class="dp-option">
+        <app-card cardTitle="Theme Option" [options]="false">
+          <div class="dp-option-playground">
+            <label class="px-2 me-2 d-flex-inline align-items-center"
+              >Material Theme
+              <input [formControl]="material" [value]="true" id="themeOn" name="style" type="radio" class="ms-1" />
+            </label>
+            <label class="d-flex-inline align-items-center"
+              >No Theme <input [formControl]="material" [value]="false" id="themeOff" name="style" type="radio" class="ms-1" />
+            </label>
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('firstDayOfWeek')" class="dp-option">
+        <app-card cardTitle="First Day of The week" [options]="false">
+          <div class="dp-option-playground">
+            <select [formControl]="firstDayOfWeek" id="firstDayOfWeekSelect">
+              <option *ngFor="let day of DAYS" [value]="day">{{ day }}</option>
+            </select>
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div *ngIf="isValidConfig('format')" class="dp-option">
+        <app-card cardTitle="Date Format (format)" [options]="false">
+          <div class="dp-option-playground">
+            <input [formControl]="format" id="dateFormat" />
+          </div>
+        </app-card>
+      </div>
+    </div> -->
+
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('monthFormat')" class="dp-option">
+        <app-card cardTitle="Month Format (monthFormat)" [options]="false">
+          <div class="dp-option-playground">
+            <input [formControl]="monthFormat" id="monthFormatInput" />
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('min')" class="dp-option">
+        <app-card cardTitle="Min Selectable Date (min)" [options]="false">
+          <div class="dp-option-playground">
+            <dp-date-picker
+              [config]="{ format: localFormat }"
+              [formControl]="min"
+              [mode]="pickerMode.startsWith('daytime') ? 'daytime' : 'day'"
+              id="minSelectable"
+              placeholder="Select a min date"
+              theme="dp-material"
+            >
+            </dp-date-picker>
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('max')" class="dp-option">
+        <app-card cardTitle="Max Selectable Date (max)" [options]="false">
+          <div class="dp-option-playground">
+            <dp-date-picker
+              [config]="{ format: localFormat }"
+              [formControl]="max"
+              [mode]="pickerMode.startsWith('daytime') ? 'daytime' : 'day'"
+              id="maxSelectable"
+              placeholder="Select a max date"
+              theme="dp-material"
+            >
+            </dp-date-picker>
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div *ngIf="isValidConfig('drops')" class="dp-option">
+        <app-card cardTitle="Drops (drops):" [options]="false">
+          <div class="dp-option-playground">
+            <label
+            class="px-2">Down
+              <input
+                [formControl]="drops"
+                name="drops"
+                type="radio"
+                value="down"
+              />
+            </label>
+            <label
+            class="px-2" >Up
+              <input
+                [formControl]="drops"
+                name="drops"
+                type="radio"
+                value="up"
+              />
+            </label>
+            <label
+              >Auto
+              <input
+                [formControl]="drops"
+                name="drops"
+                type="radio"
+                value="null"
+              />
+            </label>
+          </div>
+        </app-card>
+      </div>
+    </div> -->
+
+    <div class="col-sm-4">
+      <div *ngIf="isValidConfig('showNearMonthDays')" class="dp-option">
+        <app-card cardTitle="Show near month days (showNearMonthDays)" [options]="false">
+          <div class="dp-option-playground">
+            <label class="px-2"
+              >Show
+              <input [formControl]="showNearMonthDays" [value]="true" id="showNearMonthDaysRadio" name="showNearMonthDays" type="radio" />
+            </label>
+            <label
+              >Hide
+              <input [formControl]="showNearMonthDays" [value]="false" id="hideNearMonthDaysRadio" name="showNearMonthDays" type="radio" />
+            </label>
+          </div>
+        </app-card>
+      </div>
+    </div>
+
+    <!-- <div class="col-sm-4">
+      <div *ngIf="isValidConfig('hideOnOutsideClick')" class="dp-option">
+        <app-card cardTitle="Hide on outside click" [options]="false">
+          <div class="dp-option-playground">
+            <label
+               class="px-2">Enabled
+              <input
+                [formControl]="hideOnOutsideClick"
+                [value]="true"
+                id="hideOnOutsideClick"
+                name="hideOnOutsideClick"
+                type="radio"
+              />
+            </label>
+            <label
+              >Disabled
+              <input
+                [formControl]="hideOnOutsideClick"
+                [value]="false"
+                id="showOnOutsideClick"
+                name="hideOnOutsideClick"
+                type="radio"
+              />
+            </label>
+          </div>
+        </app-card>
+      </div>
+    </div> -->
+  </div>
+</div>
