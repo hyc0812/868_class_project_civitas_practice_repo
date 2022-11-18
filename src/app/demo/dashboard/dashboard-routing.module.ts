@@ -10,6 +10,10 @@ const routes: Routes = [
         loadChildren: () => import('./default/default.module').then((m) => m.DefaultModule)
       },
       {
+        path: 'active-members',
+        loadChildren: () => import('./active-members/active-members.module').then((m) => m.ActiveMembersModule)
+      },
+      {
         path: 'e-commerce',
         loadChildren: () => import('./ecommerce/ecommerce.module').then((m) => m.EcommerceModule)
       },
