@@ -45,10 +45,34 @@ const NavigationItems = [
             url: '/dashboard/default'
           },
           {
+            id: 'blogs',
+            title: 'Blogs',
+            type: 'item',
+            url: '/dashboard/blogs'
+          },
+          {
             id: 'active-members',
             title: 'Active Members',
             type: 'item',
             url: '/dashboard/active-members'
+          },
+          {
+            id: 'faqs',
+            title: 'FAQs',
+            type: 'item',
+            url: '/dashboard/faqs'
+          },
+          {
+            id: 'help',
+            title: 'Help',
+            type: 'item',
+            url: '/dashboard/help'
+          },
+          {
+            id: 'more',
+            title: 'More...',
+            type: 'item',
+            url: '/dashboard/more'
           },
           {
             id: 'e-commerce',

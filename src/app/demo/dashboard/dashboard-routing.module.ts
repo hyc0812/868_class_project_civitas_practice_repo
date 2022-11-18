@@ -10,8 +10,24 @@ const routes: Routes = [
         loadChildren: () => import('./default/default.module').then((m) => m.DefaultModule)
       },
       {
+        path: 'blogs',
+        loadChildren: () => import('./blogs/blogs.module').then((m) => m.BlogsModule)
+      },
+      {
         path: 'active-members',
         loadChildren: () => import('./active-members/active-members.module').then((m) => m.ActiveMembersModule)
+      },
+      {
+        path: 'faqs',
+        loadChildren: () => import('./faqs/faqs.module').then((m) => m.FaqsModule)
+      },
+      {
+        path: 'help',
+        loadChildren: () => import('./help/help.module').then((m) => m.HelpModule)
+      },
+      {
+        path: 'more',
+        loadChildren: () => import('./more/more.module').then((m) => m.MoreModule)
       },
       {
         path: 'e-commerce',
