@@ -45,6 +45,12 @@ const NavigationItems = [
             url: '/dashboard/default'
           },
           {
+            id: 'active-members',
+            title: 'Active Members',
+            type: 'item',
+            url: '/dashboard/active-members'
+          },
+          {
             id: 'e-commerce',
             title: 'Ecommerce',
             type: 'item',
