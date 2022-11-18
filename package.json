@@ -1,5 +1,5 @@
 {
-  "name": "datta-able-angular",
+  "name": "y",
   "version": "2.1.0",
   "scripts": {
     "ng": "ng",
@@ -126,5 +126,9 @@
     "ts-node": "^10.8.1",
     "tslint": "~6.1.0",
     "typescript": "^4.7.3"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/cugbomah/868_class_project_civitas_practice_repo.git",
+  "author": "Chris <chris@attainanalytics.com>",
+  "license": "MIT"
 }
