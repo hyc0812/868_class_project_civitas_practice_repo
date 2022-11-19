@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "tag": "Weather",
+    "abridgedContent": "The weather in Saskatoon is often characterised by ...",
+    "images": ["assets/trends/weather1.jpeg", "assets/trends/weather2.jpeg", "assets/trends/weather3.jpeg"]
+  },
+  {
+    "id": 2,
+    "tag": "Food",
+    "abridgedContent": "Saskatoon is famous of its reach array of cosmopolitan dishes ...",
+    "images": ["assets/trends/food1.jpeg", "assets/trends/food2.jpeg", "assets/trends/food3.jpeg"]
+  },
+  {
+    "id": 3,
+    "tag": "Finance",
+    "abridgedContent": "Learn how to manage your finance in the midst of an economic meltdown ...",
+    "images": ["assets/trends/finance1.jpeg", "assets/trends/finance2.jpeg", "assets/trends/finance3.jpeg"]
+  }
+]
