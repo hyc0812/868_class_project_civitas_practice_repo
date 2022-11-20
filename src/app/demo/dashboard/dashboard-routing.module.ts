@@ -14,6 +14,10 @@ const routes: Routes = [
         loadChildren: () => import('./blogs/blogs.module').then((m) => m.BlogsModule)
       },
       {
+        path: 'create-post',
+        loadChildren: () => import('./create-post/create-post.module').then((m) => m.CreatePostModule)
+      },
+      {
         path: 'active-members',
         loadChildren: () => import('./active-members/active-members.module').then((m) => m.ActiveMembersModule)
       },

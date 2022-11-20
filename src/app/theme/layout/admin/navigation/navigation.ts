@@ -63,6 +63,12 @@ const NavigationItems = [
             url: '/dashboard/faqs'
           },
           {
+            id: 'create-post',
+            title: 'Create Post',
+            type: 'item',
+            url: '/dashboard/create-post'
+          },
+          {
             id: 'help',
             title: 'Help',
             type: 'item',
