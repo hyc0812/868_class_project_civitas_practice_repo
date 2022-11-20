@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: DefaultComponent
+  },
+  {
+    path: 'search-result/:searchText',
+    loadChildren: () => import('../search-result/search-result.module').then((m) => m.SearchResultModule)
   }
 ];
 

@@ -29,6 +29,10 @@ const routes: Routes = [
         path: 'more',
         loadChildren: () => import('./more/more.module').then((m) => m.MoreModule)
       },
+      // {
+      //   path: 'search-result',
+      //   loadChildren: () => import('./search-result/search-result.module').then((m) => m.SearchResultModule)
+      // },
       {
         path: 'e-commerce',
         loadChildren: () => import('./ecommerce/ecommerce.module').then((m) => m.EcommerceModule)
