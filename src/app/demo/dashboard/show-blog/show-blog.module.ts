@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ShowBlogComponent } from './show-blog.component';
 import { ShowBlogRoutingModule } from './show-blog-routing.module';
 import { SharedModule } from 'src/app/theme/shared/shared.module';
+import { PellWysiwygModule } from '../../extension/editor/pell-wysiwyg/pell-wysiwyg.module';
 
 
 
@@ -13,7 +14,8 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
   imports: [
     CommonModule,
     ShowBlogRoutingModule,
-    SharedModule
+    SharedModule,
+    PellWysiwygModule
   ]
 })
 export class ShowBlogModule { }
