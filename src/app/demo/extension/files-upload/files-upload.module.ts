@@ -7,8 +7,10 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FileUploadModule } from '@iplab/ngx-file-upload';
 
+
 @NgModule({
   imports: [CommonModule, FilesUploadRoutingModule, SharedModule, ReactiveFormsModule, FormsModule, FileUploadModule],
-  declarations: [FilesUploadComponent]
+  declarations: [FilesUploadComponent],
+  exports: [FilesUploadComponent]
 })
 export class FilesUploadModule {}

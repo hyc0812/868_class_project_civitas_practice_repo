@@ -8,6 +8,7 @@ import { PellModule } from 'angular-pell';
 
 @NgModule({
   imports: [CommonModule, PellWysiwygRoutingModule, SharedModule, PellModule],
-  declarations: [PellWysiwygComponent]
+  declarations: [PellWysiwygComponent],
+  exports: [PellWysiwygComponent]
 })
 export class PellWysiwygModule {}

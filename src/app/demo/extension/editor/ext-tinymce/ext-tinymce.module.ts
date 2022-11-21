@@ -9,6 +9,7 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
 
 @NgModule({
   imports: [CommonModule, ExtTinymceRoutingModule, SharedModule, EditorModule],
-  declarations: [ExtTinymceComponent]
+  declarations: [ExtTinymceComponent],
+  exports: [ExtTinymceComponent]
 })
 export class ExtTinymceModule {}
