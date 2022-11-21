@@ -51,6 +51,12 @@ const NavigationItems = [
             url: '/dashboard/blogs'
           },
           {
+            id: 'show-blog',
+            title: 'Show Blog',
+            type: 'item',
+            url: '/dashboard/show-blog'
+          },
+          {
             id: 'active-members',
             title: 'Active Members',
             type: 'item',
