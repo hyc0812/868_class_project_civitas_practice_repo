@@ -1,2 +1,162 @@
-<p>show-blog works!</p>
-<p>show-blog works!</p><p>show-blog works!</p><p>show-blog works!</p>
+<div class="row">
+
+    <div class="col-md-6 col-xl-8">
+        <app-card cardTitle="Story Corner" cardClass="Recent-Users" blockClass="px-0 py-3">
+          <div class="card-body">
+            <h3 class="card-title mb-4">The Difference Between the Shell and the Terminal</h3>
+            <h5 class="card-subtitle mb-4 text-muted">Published: 23 MAY 2021 </h5>
+            <p class="card-text">
+                Whenever we give commands to a computer to perform a specific task using text, we refer to it as using the command line interface. When using a command line interface, we use text commands to make our programs work instead of a Graphical User Interface. Using the command line is a different way of interacting with the computer. In the Linux world, when we refer to the command line interface, we refer to a shell and, in most cases, to a bash shell. But often, we use a program to interact with the shell, called a terminal emulator. The shell and the terminal are different from each other but are often used interchangeably.
+            </p>
+            <p class="card-text">
+                The user does not interface with the kernel directly. There is a program called the shell between the user and the kernel, which is responsible for taking the inputs from the user and passing them on to the kernel. Simply put, the shell is a program that takes commands from the keyboard and gives them to the kernel to perform. It acts as an interface between the user and the kernel.
+            </p>
+
+            <div class="card-block team-leader">
+                <div class="row">
+                  <div class="col-auto">
+                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-14.jpg" alt="activity-user" />
+                  </div>
+                  <div class="col">
+                    <h5 class="mb-2">Author: Tima</h5>
+                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2004</span>
+                    <span class="f-w-300 text-muted mb-3 d-block">20 Posts and comments</span>
+                  </div>
+                </div>
+            </div> 
+
+
+
+
+          </div>
+    </app-card>
+    </div>
+
+    <div class="col-xl-4 col-md-12">
+        <app-card cardTitle="Other Blogs" cardClass="Recent-Users" blockClass="px-0 py-3">
+        <div class="table-responsive">
+            <table class="table table-hover">
+            <tbody>
+                <tr class="unread">
+                <td>
+                    <a href=""> <p class="m-1 mt-9">Does it snow all through winter?</p></a>
+                </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Best pleases to shop for winter clothes.</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">What is the lowest recorded winter temperature?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Are winter clothes affordable?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Best pleases to shop for winter clothes.</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">How long is the winter season?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Can one suffer from heat stroke during the summer?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">How long is the winter season?</p></a>
+                    </td>
+                </tr>
+
+
+            </tbody>
+            </table>
+        </div>
+        </app-card>
+    </div>
+
+
+    <app-card [customHeader]="true" blockClass="task-comment" [options]="false">
+        <div class="app-card-header">
+          <h5 class="card-header-text"> Comments</h5>
+          <button type="button" class="btn btn-icon btn-primary float-end m-0"><i class="fas fa-plus"></i></button>
+        </div>
+        <ul class="media-list p-0">
+          <li class="media">
+            <div class="media-left me-3">
+              <a href="javascript:">
+                <img class="media-object img-radius comment-img" src="assets/images/user/avatar-12.jpg" alt="Generic placeholder image" />
+              </a>
+            </div>
+            <div class="media-body">
+              <h6 class="media-heading txt-primary">Lorem Ipsum <span class="f-12 text-muted m-l-5">Just now</span></h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <div class="m-t-10 m-b-25">
+                <span><a href="javascript:" class="m-r-10 text-secondary">Reply</a></span
+                ><span><a href="javascript:" class="m-r-10 text-secondary">Edit</a> </span>
+              </div>
+              <hr />
+              <div class="media mt-2">
+                <a class="media-left me-3" href="javascript:">
+                  <img class="media-object img-radius comment-img" src="assets/images/user/avatar-11.jpg" alt="Generic placeholder image" />
+                </a>
+                <div class="media-body">
+                  <h6 class="media-heading txt-primary">Lorem Ipsum <span class="f-12 text-muted m-l-5">Just now</span></h6>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s.
+                  </p>
+                  <div class="m-t-10 m-b-25">
+                    <span><a href="javascript:" class="m-r-10 text-secondary">Reply</a></span
+                    ><span><a href="javascript:" class="m-r-10 text-secondary">Edit</a> </span>
+                  </div>
+                  <hr />
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="media mt-2">
+            <div class="media-left me-3">
+              <a href="javascript:">
+                <img class="media-object img-radius comment-img" src="assets/images/user/avatar-8.jpg" alt="Generic placeholder image" />
+              </a>
+            </div>
+            <div class="media-body">
+              <h6 class="media-heading txt-primary">Lorem ipsum<span class="f-12 text-muted m-l-5">Just now</span></h6>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+              </p>
+              <div class="m-t-10 m-b-25">
+                <span><a href="javascript:" class="m-r-10 text-secondary">Reply</a></span
+                ><span><a href="javascript:" class="m-r-10 text-secondary">Edit</a> </span>
+              </div>
+              <hr />
+            </div>
+          </li>
+        </ul>
+      </app-card>
+
+
+
+</div>
