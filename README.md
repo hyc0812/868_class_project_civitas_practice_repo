@@ -88,3 +88,17 @@ Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/hyc0812/868_class_project_civitas_practice_repo.git
 98f2681..4fdc41c  master -> master
 yongchanghe@MacBookPro 868_class_project_civitas_practice_repo % 
+
+
+
+---
+
+Command line using git:
+
+```
+git pull
+git add .
+git commit -m "Message want to add"
+git push origin master
+
+```
