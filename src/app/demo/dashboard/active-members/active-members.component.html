@@ -3,20 +3,19 @@
         <h4 class="mt-4">Here are some people that make our community tick!</h4>
         <hr />
       </div>
-    <div *ngFor="let activeMember of activeMembers" class="col-md-7 col-xl-4">
+    <div *ngFor="let member of members" class="col-md-7 col-xl-4">
         <div class="card">
           <div class="card-block team-leader">
                 <div class="row">
                   <div class="col-auto">
-                    <img class="rounded-circle" style="width: 90px" src= "{{ activeMember.avatorSrc }}" width="50" height="90" alt="activity-user" />
+                    <img class="rounded-circle" style="width: 90px" src= "{{ member.avatorSrc }}" width="50" height="90" alt="activity-user" />
                   </div>
                   <div class="col">
-                    <h5 class="mb-2">{{ activeMember.name }}</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: {{ activeMember.memberSince }}</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">{{ activeMember.postsAndComments }} Posts and Comments</span>
+                    <h5 class="mb-2">{{ member.name }}</h5>
+                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: {{ member.memberSince }}</span>
+                    <span class="f-w-300 text-muted mb-3 d-block">{{ member.postsAndComments }} Posts and Comments</span>
                     <h6 class="mb-2">Passionate About:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Food & Fine Dining #Fashion</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Tourism & Travel</span>
+                    <span class="f-w-300 text-muted mb-1 d-block">{{ member.passionateAbout }}</span>
                   </div>
                 </div>
             </div> 

@@ -5,7 +5,32 @@
         "avatorSrc":"assets/images/user/avatar-6.jpg",
         "memberSince": 2004,
         "postsAndComments": "50",
-        "passionateAbout": "#Food & Fine Dining #Fashion #Tourism & Travel"
+        "passionateAbout": "#Food & Fine Dining #Fashion #Tourism & Travel",
+        "posts": [
+            {
+                "postId":1, 
+                "title":"Does it snow all through winter?",
+                "comments":
+                    [
+                        { "commentId":1, 
+                          "commenterName": "Chris",
+                          "commenterRemark": "Lorem ipsum dolor matar....",
+                          "comments":[
+                                {"commentId":3, 
+                                 "commenterName": "Prakhyat",
+                                 "commenterRemark": "Lorem ipsum dolor matar...."
+                                }
+                            ]
+                        },
+                        {"commentId":2, 
+                        "commenterName": "Yongchang",
+                         "commenterRemark": "Lorem ipsum dolor matar...."
+                        }
+                        
+                    ],
+                "tags":["weather"]
+            }
+        ]
     },
     {
         "id": 2,

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import ActiveMembersJSON from 'src/fake-data/active-members.json';
+import MembersJSON from 'src/fake-data/members.json';
 
 @Component({
   selector: 'app-active-members',
@@ -10,7 +10,7 @@ export class ActiveMembersComponent implements OnInit {
 
   constructor() { }
 
-  activeMembers = ActiveMembersJSON;
+  members = MembersJSON;
   
   ngOnInit(): void {
   }
