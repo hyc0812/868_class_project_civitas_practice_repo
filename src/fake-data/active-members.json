@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Natalya",
+        "member-since": 2004,
+        "posts-and-comments": 50,
+        "passionate-about": "#Food & Fine Dining #Fashion #Tourism & Travel"
+    },
+    {
+        "id": 2,
+        "name": "Olu",
+        "member-since": 2000,
+        "posts-and-comments": 45,
+        "passionate-about": "#Wellbeing & Fitness #Community #Building & Team Bonding"
+    },
+    {
+        "id": 3,
+        "name": "Maria",
+        "member-since": 2020,
+        "posts-and-comments": 43,
+        "passionate-about": "#Photography #Outdoor Exploration"
+    },
+    {
+        "id": 4,
+        "name": "Jide",
+        "member-since": 2004,
+        "posts-and-comments": 39,
+        "passionate-about": "#IT #Tech #Gadgets"
+    },
+    {
+        "id": 5,
+        "name": "Lisa",
+        "member-since": 2012,
+        "posts-and-comments": 30,
+        "passionate-about": "#Family & Friends #Immigration #Community & travel"
+    }, 
+    {
+        "id": 6,
+        "name": "Sunil",
+        "member-since": 2020,
+        "posts-and-comments": 30,
+        "passionate-about": "#Fun & Games #Hiking #Disco"
+    },
+    {
+        "id": 7,
+        "name": "Derek",
+        "member-since": 2022,
+        "posts-and-comments": 27,
+        "passionate-about": "#Career #Education #Immigration #Opportunities"
+    },
+    {
+        "id": 8,
+        "name": "Susan",
+        "member-since": 2004,
+        "posts-and-comments": 25,
+        "passionate-about": "#Summer Gardening #Designs & Decors #Home improvement"
+    },
+    {
+        "id": 9,
+        "name": "Tima",
+        "member-since": 2004,
+        "posts-and-comments": 20,
+        "passionate-about": "#Health & Wellness #Community initiatives #Spitituality"
+    }
+
+]
