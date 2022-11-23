@@ -1,23 +1,20 @@
 <div class="row">
-
-
     <div class="col-sm-12">
         <h4 class="mt-4">Here are some people that make our community tick!</h4>
         <hr />
       </div>
-
     <div *ngFor="let activeMember of activeMembers" class="col-md-7 col-xl-4">
         <div class="card">
           <div class="card-block team-leader">
                 <div class="row">
                   <div class="col-auto">
-                    <img class="rounded-circle" style="width: 90px" src= "{{ activeMember.avatorSrc }}" alt="activity-user" />
+                    <img class="rounded-circle" style="width: 90px" src= "{{ activeMember.avatorSrc }}" width="50" height="90" alt="activity-user" />
                   </div>
                   <div class="col">
                     <h5 class="mb-2">{{ activeMember.name }}</h5>
                     <span class="f-w-300 text-muted mb-1 d-block">Member Since: {{ activeMember.memberSince }}</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">{{ activeMember.postsAndComments }} Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
+                    <span class="f-w-300 text-muted mb-3 d-block">{{ activeMember.postsAndComments }} Posts and Comments</span>
+                    <h6 class="mb-2">Passionate About:</h6>
                     <span class="f-w-300 text-muted mb-1 d-block">#Food & Fine Dining #Fashion</span>
                     <span class="f-w-300 text-muted mb-1 d-block">#Tourism & Travel</span>
                   </div>
@@ -25,173 +22,4 @@
             </div> 
         </div>
     </div> 
-
-    <!-- <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-7.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Olu</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2000</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">45 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Wellbeing & Fitness #Community</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Building & Team Bonding</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-
-    <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-8.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Maria</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2020</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">43 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Photography</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Outdoor Exploration</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-
-    <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-9.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Jide</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2004</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">39 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#IT #Tech</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Gadgets</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-
-    <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-10.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Lisa</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2012</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">30 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Family, friends  #Immigration</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Community & Travel</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-
-    <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-11.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Sunil</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2020</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">30 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Fun & Games #Hiking</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Disco</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-
-    <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-12.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Derek</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2022</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">27 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Career # Education #Immigration</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Opportunities</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-
-    <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-13.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Susan</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2004</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">25 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Summer Gardening  #Designs & Decors</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Home Improvement</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div> 
-
-
-    <div class="col-md-7 col-xl-4">
-        <div class="card">
-          <div class="card-block team-leader">
-                <div class="row">
-                  <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-14.jpg" alt="activity-user" />
-                  </div>
-                  <div class="col">
-                    <h5 class="mb-2">Tima</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2004</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">20 Posts and comments</span>
-                    <h6 class="mb-2">Passionate about:</h6>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Health & Wellness #Community initiatives</span>
-                    <span class="f-w-300 text-muted mb-1 d-block">#Spitituality</span>
-                  </div>
-                </div>
-            </div> 
-        </div>
-    </div>  -->
-
-
 </div>
