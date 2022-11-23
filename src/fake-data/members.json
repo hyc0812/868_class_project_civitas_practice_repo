@@ -9,26 +9,31 @@
         "posts": [
             {
                 "postId":1, 
-                "title":"Does it snow all through winter?",
+                "postTimestamp": "MAY 23 2021",
+                "postTitle":"Does it snow all through winter?",
+                "postContent": "For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "postTags":["weather"],
                 "comments":
                     [
-                        { "commentId":1, 
-                          "commenterName": "Chris",
-                          "commenterRemark": "Lorem ipsum dolor matar....",
-                          "comments":[
-                                {"commentId":3, 
-                                 "commenterName": "Prakhyat",
-                                 "commenterRemark": "Lorem ipsum dolor matar...."
+                        {
+                            "commentId":1, 
+                            "commenterName": "Chris",
+                            "commenterRemark": "Lorem ipsum dolor matar....",
+                            "comments":[
+                                {
+                                    "commentId":3, 
+                                    "commenterName": "Prakhyat",
+                                    "commenterRemark": "Lorem ipsum dolor matar...."
                                 }
                             ]
                         },
-                        {"commentId":2, 
-                        "commenterName": "Yongchang",
-                         "commenterRemark": "Lorem ipsum dolor matar...."
+                        {
+                            "commentId":2, 
+                            "commenterName": "Yongchang",
+                            "commenterRemark": "Lorem ipsum dolor matar...."
                         }
                         
-                    ],
-                "tags":["weather"]
+                    ]
             }
         ]
     },
