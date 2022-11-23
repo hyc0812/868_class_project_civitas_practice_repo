@@ -6,17 +6,17 @@
         <hr />
       </div>
 
-    <div class="col-md-7 col-xl-4">
+    <div *ngFor="let activeMember of activeMembers" class="col-md-7 col-xl-4">
         <div class="card">
           <div class="card-block team-leader">
                 <div class="row">
                   <div class="col-auto">
-                    <img class="rounded-circle" style="width: 90px" src="assets/images/user/avatar-6.jpg" alt="activity-user" />
+                    <img class="rounded-circle" style="width: 90px" src= "{{ activeMember.avatorSrc }}" alt="activity-user" />
                   </div>
                   <div class="col">
-                    <h5 class="mb-2">Natalya</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: 2004</span>
-                    <span class="f-w-300 text-muted mb-3 d-block">50 Posts and comments</span>
+                    <h5 class="mb-2">{{ activeMember.name }}</h5>
+                    <span class="f-w-300 text-muted mb-1 d-block">Member Since: {{ activeMember.memberSince }}</span>
+                    <span class="f-w-300 text-muted mb-3 d-block">{{ activeMember.postsAndComments }} Posts and comments</span>
                     <h6 class="mb-2">Passionate about:</h6>
                     <span class="f-w-300 text-muted mb-1 d-block">#Food & Fine Dining #Fashion</span>
                     <span class="f-w-300 text-muted mb-1 d-block">#Tourism & Travel</span>
@@ -26,7 +26,7 @@
         </div>
     </div> 
 
-    <div class="col-md-7 col-xl-4">
+    <!-- <div class="col-md-7 col-xl-4">
         <div class="card">
           <div class="card-block team-leader">
                 <div class="row">
@@ -191,7 +191,7 @@
                 </div>
             </div> 
         </div>
-    </div> 
+    </div>  -->
 
 
-
+</div>
