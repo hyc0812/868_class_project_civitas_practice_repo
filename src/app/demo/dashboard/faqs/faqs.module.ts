@@ -6,6 +6,7 @@ import { FaqsRoutingModule } from './faqs-routing.module';
 
 @NgModule({
   declarations: [FaqsComponent],
+  exports: [FaqsComponent],
   imports: [CommonModule, SharedModule, FaqsRoutingModule]
 })
 export class FaqsModule {}

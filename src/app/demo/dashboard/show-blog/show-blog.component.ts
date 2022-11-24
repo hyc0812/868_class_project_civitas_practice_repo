@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FaqsComponent } from '../faqs/faqs.component';
 
 @Component({
   selector: 'app-show-blog',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowBlogComponent implements OnInit {
 
+  @Input() selectedPost: FaqsComponent["selectedPost"];
+
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }

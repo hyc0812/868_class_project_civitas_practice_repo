@@ -4,6 +4,7 @@ import { ShowBlogComponent } from './show-blog.component';
 import { ShowBlogRoutingModule } from './show-blog-routing.module';
 import { SharedModule } from 'src/app/theme/shared/shared.module';
 import { PellWysiwygModule } from '../../extension/editor/pell-wysiwyg/pell-wysiwyg.module';
+import { FaqsModule } from '../faqs/faqs.module';
 
 
 
@@ -15,7 +16,8 @@ import { PellWysiwygModule } from '../../extension/editor/pell-wysiwyg/pell-wysi
     CommonModule,
     ShowBlogRoutingModule,
     SharedModule,
-    PellWysiwygModule
+    PellWysiwygModule,
+    FaqsModule,
   ]
 })
 export class ShowBlogModule { }

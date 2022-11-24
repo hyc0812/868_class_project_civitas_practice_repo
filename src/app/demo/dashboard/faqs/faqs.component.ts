@@ -20,8 +20,8 @@ export class FaqsComponent implements OnInit {
 
   onSelect(memberPost: Members["posts"]): void {
     this.selectedPost = memberPost;
-    console.log(this.selectedPost["postContent"]);
-    console.log(this.members.find(x => x.id === 9).name);
+    // console.log(this.selectedPost["postContent"]);
+    // console.log(this.members.find(x => x.id === 9).name);
   }
 
 }
