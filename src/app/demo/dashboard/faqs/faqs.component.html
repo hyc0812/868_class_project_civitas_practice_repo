@@ -109,4 +109,11 @@
   </app-card>
     </div>
 
+
+    <div *ngIf="selectedPost">
+      <div>Title: {{ selectedPost.postTitle }}</div>
+      <div>Content: {{ selectedPost.postContent }}</div>
+    </div>
+
+    
 </div>
