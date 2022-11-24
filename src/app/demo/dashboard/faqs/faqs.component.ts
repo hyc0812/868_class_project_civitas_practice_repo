@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import MembersJSON from 'src/fake-data/members.json';
 
 @Component({
   selector: 'app-faqs',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./faqs.component.scss']
 })
 export class FaqsComponent implements OnInit {
+
+  members = MembersJSON;
+  
   constructor() {}
 
   ngOnInit(): void {}
