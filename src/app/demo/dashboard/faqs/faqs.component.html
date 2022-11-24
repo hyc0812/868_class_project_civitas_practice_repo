@@ -10,8 +10,8 @@
                     <tr class="unread">           
                       <ng-container *ngIf="memberPost.postTags.includes('weather')">
                         <td>
-                          <a href=""> <p class="m-1 mt-9">{{ memberPost.postTitle }}</p></a>
-                        </td>
+                          <a [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p>
+                          </a>
                         <td><h6 class="mb-1">{{ member.name }}</h6></td>
                         <td>
                           <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.postTimestamp }}</h6>
@@ -37,8 +37,8 @@
                   <tr class="unread">           
                     <ng-container *ngIf="memberPost.postTags.includes('family') || memberPost.postTags.includes('community') || memberPost.postTags.includes('wellness')">
                       <td>
-                        <a href=""> <p class="m-1 mt-9">{{ memberPost.postTitle }}</p></a>
-                      </td>
+                        <a [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p></a>
+                        </td>
                       <td><h6 class="mb-1">{{ member.name }}</h6></td>
                       <td>
                         <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.postTimestamp }}</h6>
@@ -64,7 +64,8 @@
                 <tr class="unread">           
                   <ng-container *ngIf="memberPost.postTags.includes('food') || memberPost.postTags.includes('drink') || memberPost.postTags.includes('dining')">
                     <td>
-                      <a href=""> <p class="m-1 mt-9">{{ memberPost.postTitle }}</p></a>
+                      <a [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p>
+                      </a>
                     </td>
                     <td><h6 class="mb-1">{{ member.name }}</h6></td>
                     <td>
@@ -91,7 +92,8 @@
               <tr class="unread">           
                 <ng-container *ngIf="memberPost.postTags.includes('immigration') || memberPost.postTags.includes('education') ">
                   <td>
-                    <a href=""> <p class="m-1 mt-9">{{ memberPost.postTitle }}</p></a>
+                    <a [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p>
+                    </a>
                   </td>
                   <td><h6 class="mb-1">{{ member.name }}</h6></td>
                   <td>
