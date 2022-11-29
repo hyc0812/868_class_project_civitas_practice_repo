@@ -13,10 +13,10 @@ const routes: Routes = [
         path: 'blogs',
         loadChildren: () => import('./blogs/blogs.module').then((m) => m.BlogsModule)
       },
-      {
-        path: 'show-blog',
-        loadChildren: () => import('./show-blog/show-blog.module').then((m) => m.ShowBlogModule)
-      },
+      // {
+      //   path: 'show-blog',
+      //   loadChildren: () => import('./show-blog/show-blog.module').then((m) => m.ShowBlogModule)
+      // },
 
       {
         path: 'create-post',

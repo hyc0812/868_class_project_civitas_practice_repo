@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Natalya",
-        "avatorSrc":"assets/images/user/avatar-6.jpg",
+        "avatarSrc":"assets/images/user/avatar-6.jpg",
         "memberSince": 2004,
         "postsAndComments": "50",
         "passionateAbout": "#Food & Fine Dining #Fashion #Tourism & Travel",
@@ -40,13 +40,13 @@
     {
         "id": 2,
         "name": "Olu",
-        "avatorSrc":"assets/images/user/avatar-7.jpg",
+        "avatarSrc":"assets/images/user/avatar-7.jpg",
         "memberSince": "2000",
         "postsAndComments": "45",
         "passionateAbout": "#Wellbeing & Fitness #Community #Building & Team Bonding",
         "posts": [
             {
-                "postId":1, 
+                "postId":2, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"Are there good facilities accessible to new comers",
                 "postContent": "content 2: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -78,13 +78,13 @@
     {
         "id": 3,
         "name": "Maria",
-        "avatorSrc":"assets/images/user/avatar-8.jpg",
+        "avatarSrc":"assets/images/user/avatar-8.jpg",
         "memberSince": "2020",
         "postsAndComments": "43",
         "passionateAbout": "#Photography #Outdoor Exploration",
         "posts": [
             {
-                "postId":1, 
+                "postId":3, 
                 "postTimestamp": "JUN 12 2021",
                 "postTitle":"How do I convert my coupon to cash?",
                 "postContent": "content 3: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -116,13 +116,13 @@
     {
         "id": 4,
         "name": "Jide",
-        "avatorSrc":"assets/images/user/avatar-9.jpg",
+        "avatarSrc":"assets/images/user/avatar-9.jpg",
         "memberSince": "2004",
         "postsAndComments": "39",
         "passionateAbout": "#IT #Tech #Gadgets",
         "posts": [
             {
-                "postId":1, 
+                "postId":4, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"I am a student. Am I allowed to bring a family?",
                 "postContent": "content 4: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -154,13 +154,13 @@
     {
         "id": 5,
         "name": "Lisa",
-        "avatorSrc":"assets/images/user/avatar-10.jpg",
+        "avatarSrc":"assets/images/user/avatar-10.jpg",
         "memberSince": "2012",
         "postsAndComments": "30",
         "passionateAbout": "#Family & Friends #Immigration #Community & travel",
         "posts": [
             {
-                "postId":1, 
+                "postId":5, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"Best places to shop for winter clothes!",
                 "postContent": "content 5: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -192,13 +192,13 @@
     {
         "id": 6,
         "name": "Sunil",
-        "avatorSrc":"assets/images/user/avatar-11.jpg",
+        "avatarSrc":"assets/images/user/avatar-11.jpg",
         "memberSince": "2020",
         "postsAndComments": "30",
         "passionateAbout": "#Fun & Games #Hiking #Disco",
         "posts": [
             {
-                "postId":1, 
+                "postId":6, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"What time do restaurant close?",
                 "postContent": "content 6: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -230,13 +230,13 @@
     {
         "id": 7,
         "name": "Derek",
-        "avatorSrc":"assets/images/user/avatar-12.jpg",
+        "avatarSrc":"assets/images/user/avatar-12.jpg",
         "memberSince": "2022",
         "postsAndComments": "27",
         "passionateAbout": "#Career #Education #Immigration #Opportunities",
         "posts": [
             {
-                "postId":1, 
+                "postId":7, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"Can I work two jobs on a student VISA?",
                 "postContent": "content 7: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -268,13 +268,13 @@
     {
         "id": 8,
         "name": "Susan",
-        "avatorSrc":"assets/images/user/avatar-13.jpg",
+        "avatarSrc":"assets/images/user/avatar-13.jpg",
         "memberSince": "2004",
         "postsAndComments": "25",
         "passionateAbout": "#Summer Gardening #Designs & Decors #Home improvement",
         "posts": [
             {
-                "postId":1, 
+                "postId":8, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"Is it preferable to start on a Fall Term?",
                 "postContent": "content 8: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -306,13 +306,13 @@
     {
         "id": 9,
         "name": "Tima",
-        "avatorSrc":"assets/images/user/avatar-14.jpg",
+        "avatarSrc":"assets/images/user/avatar-14.jpg",
         "memberSince": "2004",
         "postsAndComments": "20",
         "passionateAbout": "#Health & Wellness #Community initiatives #Spitituality",
         "posts": [
             {
-                "postId":1, 
+                "postId":9, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"Are the bus schedules reliable?",
                 "postContent": "content 9: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
@@ -344,13 +344,13 @@
     {
         "id": 10,
         "name": "Yongchang",
-        "avatorSrc":"assets/images/user/avatar-5.jpg",
+        "avatarSrc":"assets/images/user/avatar-5.jpg",
         "memberSince": "2004",
         "postsAndComments": "20",
         "passionateAbout": "#Health & Wellness #Community initiatives #Spitituality",
         "posts": [
             {
-                "postId":1, 
+                "postId":10, 
                 "postTimestamp": "MAY 23 2021",
                 "postTitle":"Any personal recommendations for a nice restaurant?",
                 "postContent": "content 10: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",

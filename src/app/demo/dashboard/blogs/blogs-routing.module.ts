@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: BlogsComponent
+  },
+  {
+    path:'show-blog/:postId',
+    loadChildren:() =>import ('../show-blog/show-blog.module').then((m)=>m.ShowBlogModule)
   }
 ];
 
