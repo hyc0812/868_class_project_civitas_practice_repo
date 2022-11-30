@@ -18,11 +18,11 @@ export class ShowBlogComponent implements OnInit {
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
-    const postId = routeParams.get('postId');
+    const id = routeParams.get('postId');
 
     for (let i = 0; i < this.members.length; i++) {
       for (let j = 0; j < this.members[i].posts.length; j++) {
-        if(this.members[i].posts[j].postId == postId){
+        if(this.members[i].posts[j].id == id){
           this.selectedPost = this.members[i].posts[j];
           this.selectedPost.registeredMember = this.members[i];
           break;

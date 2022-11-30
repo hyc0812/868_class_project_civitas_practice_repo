@@ -8,13 +8,13 @@
                 <ng-container *ngFor="let member of members">
                   <ng-container *ngFor="let memberPost of member.posts"> 
                     <tr class="unread">           
-                      <ng-container *ngIf="memberPost.postTags.includes('weather')">
+                      <ng-container *ngIf="memberPost.tags.includes('weather')">
                         <td>
-                          <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.postId]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p>
+                          <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.id]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.title }}</p>
                           </a>
-                        <td><h6 class="mb-1">{{ member.name }}</h6></td>
+                        <td><h6 class="mb-1">{{ member.firstName }}</h6></td>
                         <td>
-                          <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.postTimestamp }}</h6>
+                          <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.createdAt }}</h6>
                         </td>
                       </ng-container> 
                     </tr>
@@ -35,13 +35,13 @@
               <ng-container *ngFor="let member of members">
                 <ng-container *ngFor="let memberPost of member.posts"> 
                   <tr class="unread">           
-                    <ng-container *ngIf="memberPost.postTags.includes('family') || memberPost.postTags.includes('community') || memberPost.postTags.includes('wellness')">
+                    <ng-container *ngIf="memberPost.tags.includes('family') || memberPost.tags.includes('community') || memberPost.tags.includes('wellness')">
                       <td>
-                        <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.postId]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p></a>
+                        <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.id]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.title }}</p></a>
                         </td>
-                      <td><h6 class="mb-1">{{ member.name }}</h6></td>
+                      <td><h6 class="mb-1">{{ member.firstName }}</h6></td>
                       <td>
-                        <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.postTimestamp }}</h6>
+                        <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.createdAt }}</h6>
                       </td>
                     </ng-container> 
                   </tr>
@@ -62,14 +62,14 @@
             <ng-container *ngFor="let member of members">
               <ng-container *ngFor="let memberPost of member.posts"> 
                 <tr class="unread">           
-                  <ng-container *ngIf="memberPost.postTags.includes('food') || memberPost.postTags.includes('drink') || memberPost.postTags.includes('dining')">
+                  <ng-container *ngIf="memberPost.tags.includes('food') || memberPost.tags.includes('drink') || memberPost.tags.includes('dining')">
                     <td>
-                      <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.postId]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p>
+                      <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.id]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.title }}</p>
                       </a>
                     </td>
-                    <td><h6 class="mb-1">{{ member.name }}</h6></td>
+                    <td><h6 class="mb-1">{{ member.firstName }}</h6></td>
                     <td>
-                      <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.postTimestamp }}</h6>
+                      <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.createdAt }}</h6>
                     </td>
                   </ng-container> 
                 </tr>
@@ -90,14 +90,14 @@
           <ng-container *ngFor="let member of members">
             <ng-container *ngFor="let memberPost of member.posts"> 
               <tr class="unread">           
-                <ng-container *ngIf="memberPost.postTags.includes('immigration') || memberPost.postTags.includes('education') ">
+                <ng-container *ngIf="memberPost.tags.includes('immigration') || memberPost.tags.includes('education') ">
                   <td>
-                    <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.postId]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.postTitle }}</p>
+                    <a [routerLink]="['/dashboard/blogs/show-blog', memberPost.id]" [class.selected]="post === selectedPost" type="button"  (click)="onSelect(memberPost)" > <p class="m-1 mt-9">{{ memberPost.title }}</p>
                     </a>
                   </td>
-                  <td><h6 class="mb-1">{{ member.name }}</h6></td>
+                  <td><h6 class="mb-1">{{ member.firstName }}</h6></td>
                   <td>
-                    <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.postTimestamp }}</h6>
+                    <h6 class="text-muted"><i class="fas fa-circle text-c-green f-10 m-r-15"></i>{{ memberPost.createdAt }}</h6>
                   </td>
                 </ng-container> 
               </tr>
@@ -110,11 +110,11 @@
     </div>
 
 
-    <div *ngIf="selectedPost">
+    <!-- <div *ngIf="selectedPost">
       <h3>Title: {{ selectedPost.postTitle }}</h3>
       <h5>Tags: #{{ selectedPost.postTags }}</h5>
       <div>Content: {{ selectedPost.postContent }}</div>
-    </div>
+    </div> -->
 
 
 </div>

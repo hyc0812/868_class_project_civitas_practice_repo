@@ -1,98 +1,31 @@
 <div class="row">
 
-    <!-- <div *ngIf="selectedPost">
-        {{ selectedPost.postId }}
-      </div> -->
-
     <div class="col-md-6 col-xl-10">
         <app-card cardTitle="Story Corner" cardClass="Recent-Users" blockClass="px-0 py-3">
           <div class="card-body">
-            <h3 class="card-title mb-4">{{ selectedPost.postTitle }} </h3>
-            <h5 class="card-subtitle mb-4 text-muted">Published: {{ selectedPost.postTimestamp}} </h5>
-            <h6 class="card-subtitle mb-4 text-muted">#Tag: {{ selectedPost.postTags }} </h6>
+            <h3 class="card-title mb-4">{{ selectedPost.title }} </h3>
+           <h5 class="card-subtitle mb-4 text-muted">Published: {{ selectedPost.createdAt}} </h5>
+            <h6 class="card-subtitle mb-4 text-muted">#Tag: {{ selectedPost.tags }} </h6>
             <p class="card-text">
-              {{ selectedPost.postContent}}  
+              {{ selectedPost.content}}  
             </p>
 
-            <div class="card-block team-leader">
+           <div class="card-block team-leader">
                 <div class="row">
                   <div class="col-auto">
-                    <img class="rounded-circle" style="width: 85px" src="{{ selectedPost.registeredMember.avatarSrc }}" width="50" height="90"  alt="activity-user" />
+                    <img class="rounded-circle" style="width: 85px" src="{{ selectedPost.registeredMember.picture }}" width="50" height="90"  alt="activity-user" />
                   </div>
                   <div class="col">
-                    <h5 class="mb-2">Author: {{ selectedPost.registeredMember.name }}</h5>
-                    <span class="f-w-300 text-muted mb-1 d-block">Member {{ selectedPost.registeredMember.memberSince }}</span>
+                    <h5 class="mb-2">Author: {{ selectedPost.registeredMember.firstName }}</h5>
+                    <span class="f-w-300 text-muted mb-1 d-block">Member {{ selectedPost.registeredMember.createdAt }}</span>
                     <span class="f-w-300 text-muted mb-3 d-block">{{ selectedPost.registeredMember.postsAndComments }} Posts and comments</span>
                   </div>
+                  </div>
                 </div>
-            </div> 
-
-
-
-
-          </div>
-    </app-card>
+          </div> 
+        </app-card>
     </div>
 
-    <!-- <div class="col-xl-4 col-md-12">
-        <app-card cardTitle="Other Blogs" cardClass="Recent-Users" blockClass="px-0 py-3">
-        <div class="table-responsive">
-            <table class="table table-hover">
-            <tbody>
-                <tr class="unread">
-                <td>
-                    <a href=""> <p class="m-1 mt-9">Does it snow all through winter?</p></a>
-                </td>
-                </tr>
-
-                <tr class="unread">
-                    <td>
-                    <a href=""><p class="m-1 mt-9">Best pleases to shop for winter clothes.</p></a>
-                    </td>
-                </tr>
-
-                <tr class="unread">
-                    <td>
-                    <a href=""><p class="m-1 mt-9">What is the lowest recorded winter temperature?</p></a>
-                    </td>
-                </tr>
-
-                <tr class="unread">
-                    <td>
-                    <a href=""><p class="m-1 mt-9">Are winter clothes affordable?</p></a>
-                    </td>
-                </tr>
-
-                <tr class="unread">
-                    <td>
-                    <a href=""><p class="m-1 mt-9">Best pleases to shop for winter clothes.</p></a>
-                    </td>
-                </tr>
-
-                <tr class="unread">
-                    <td>
-                    <a href=""><p class="m-1 mt-9">How long is the winter season?</p></a>
-                    </td>
-                </tr>
-
-                <tr class="unread">
-                    <td>
-                    <a href=""><p class="m-1 mt-9">Can one suffer from heat stroke during the summer?</p></a>
-                    </td>
-                </tr>
-
-                <tr class="unread">
-                    <td>
-                    <a href=""><p class="m-1 mt-9">How long is the winter season?</p></a>
-                    </td>
-                </tr>
-
-
-            </tbody>
-            </table>
-        </div>
-        </app-card>
-    </div> -->
 
 
     <app-card class="col-xl-10 col-md-12" [customHeader]="true" blockClass="task-comment" [options]="false">
@@ -157,11 +90,78 @@
             </div>
           </li>
         </ul>
-      </app-card>
+    </app-card>
 
 
-      <app-pell-wysiwyg></app-pell-wysiwyg>
+      <app-pell-wysiwyg></app-pell-wysiwyg> 
 
 </div>
 
 <button type="button" class="btn btn-primary btn-lg">Publish</button>
+
+
+
+
+
+
+
+
+    <!-- <div class="col-xl-4 col-md-12">
+        <app-card cardTitle="Other Blogs" cardClass="Recent-Users" blockClass="px-0 py-3">
+        <div class="table-responsive">
+            <table class="table table-hover">
+            <tbody>
+                <tr class="unread">
+                <td>
+                    <a href=""> <p class="m-1 mt-9">Does it snow all through winter?</p></a>
+                </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Best pleases to shop for winter clothes.</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">What is the lowest recorded winter temperature?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Are winter clothes affordable?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Best pleases to shop for winter clothes.</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">How long is the winter season?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">Can one suffer from heat stroke during the summer?</p></a>
+                    </td>
+                </tr>
+
+                <tr class="unread">
+                    <td>
+                    <a href=""><p class="m-1 mt-9">How long is the winter season?</p></a>
+                    </td>
+                </tr>
+
+
+            </tbody>
+            </table>
+        </div>
+        </app-card>
+    </div> -->

@@ -1,36 +1,78 @@
 [
     {
         "id": 1,
-        "name": "Natalya",
-        "avatarSrc":"assets/images/user/avatar-6.jpg",
-        "memberSince": 2004,
+        "firstName": "Natalya",
+        "lastName": "Elsher",
+        "email":"natalya.elsher@yy.com",
+        "password":"abcd1234",
+        "lastLogin":"",
+        "intro":"",
+        "picture":"assets/images/user/avatar-6.jpg",
+        "createdAt": "2004",
+        "updatedAt": "2004",
+        "updatedBy":"",
         "postsAndComments": "50",
         "passionateAbout": "#Food & Fine Dining #Fashion #Tourism & Travel",
         "posts": [
             {
-                "postId":1, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"Does it snow all through winter?",
-                "postContent": "content 1: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["weather"],
-                "comments":
+                "id":1, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"Does it snow all through winter?",
+                "content": "content 1: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Natalya",
+                "authorId": "1",
+                "partOf": "",
+                "parentPost": "",
+                "childrenPosts": "",
+                "tags":["weather"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 1,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 1,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 1,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -39,36 +81,73 @@
     },
     {
         "id": 2,
-        "name": "Olu",
-        "avatarSrc":"assets/images/user/avatar-7.jpg",
-        "memberSince": "2000",
+        "firstName": "Olu",
+        "lastName": "Solace",
+        "email":"olu.solace@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-7.jpg",
+        "createdAt": "2000",
+        "updatedAt": "2004",
+        "updatedBy":"",
         "postsAndComments": "45",
         "passionateAbout": "#Wellbeing & Fitness #Community #Building & Team Bonding",
         "posts": [
             {
-                "postId":2, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"Are there good facilities accessible to new comers",
-                "postContent": "content 2: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["wellness"],
-                "comments":
+                "id":2, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"Are there good facilities accessible to new comers",
+                "content": "content 2: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Olu",
+                "authorId": "2",
+                "tags":["wellness"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 2,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 2,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 2,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -77,36 +156,73 @@
     },
     {
         "id": 3,
-        "name": "Maria",
-        "avatarSrc":"assets/images/user/avatar-8.jpg",
-        "memberSince": "2020",
+        "firstName": "Maria",
+        "lastName": "Levine",
+        "email":"maria.levine@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-8.jpg",
+        "createdAt": "2020",
+        "updatedAt": "2020",
+        "updatedBy":"",
         "postsAndComments": "43",
         "passionateAbout": "#Photography #Outdoor Exploration",
         "posts": [
             {
-                "postId":3, 
-                "postTimestamp": "JUN 12 2021",
-                "postTitle":"How do I convert my coupon to cash?",
-                "postContent": "content 3: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["weather"],
-                "comments":
+                "id":3, 
+                "createdAt": "JUN 12 2021",
+                "updatedAt": "",
+                "title":"How do I convert my coupon to cash?",
+                "content": "content 3: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Maria",
+                "authorId": "3",
+                "tags":["weather"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 3,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 3,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 3,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -115,36 +231,73 @@
     },
     {
         "id": 4,
-        "name": "Jide",
-        "avatarSrc":"assets/images/user/avatar-9.jpg",
-        "memberSince": "2004",
+        "firstName": "Jide",
+        "lastName": "Thatcher",
+        "email":"jide.thatcher@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-9.jpg",
+        "createdAt": "2004",
+        "updatedAt": "2004",
+        "updatedBy":"",
         "postsAndComments": "39",
         "passionateAbout": "#IT #Tech #Gadgets",
         "posts": [
             {
-                "postId":4, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"I am a student. Am I allowed to bring a family?",
-                "postContent": "content 4: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["immigration"],
-                "comments":
+                "id":4, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"I am a student. Am I allowed to bring a family?",
+                "content": "content 4: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Jide",
+                "authorId": "4",
+                "tags":["immigration"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 4,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 4,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 4,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -153,36 +306,73 @@
     },
     {
         "id": 5,
-        "name": "Lisa",
-        "avatarSrc":"assets/images/user/avatar-10.jpg",
-        "memberSince": "2012",
+        "firstName": "Lisa",
+        "lastName": "Raven",
+        "email":"lisa.raven@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-10.jpg",
+        "createdAt": "2012",
+        "updatedAt": "2012",
+        "updatedBy":"",
         "postsAndComments": "30",
         "passionateAbout": "#Family & Friends #Immigration #Community & travel",
         "posts": [
             {
-                "postId":5, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"Best places to shop for winter clothes!",
-                "postContent": "content 5: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["dining"],
-                "comments":
+                "id":5, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"Best places to shop for winter clothes!",
+                "content": "content 5: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Lisa",
+                "authorId": "5",
+                "tags":["dining"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 5,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 5,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 5,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -191,36 +381,73 @@
     }, 
     {
         "id": 6,
-        "name": "Sunil",
-        "avatarSrc":"assets/images/user/avatar-11.jpg",
-        "memberSince": "2020",
+        "firstName": "Sunil",
+        "lastName": "Bardot",
+        "email":"sunil.bardot@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-11.jpg",
+        "createdAt": "2020",
+        "updatedAt": "2020",
+        "updatedBy":"",
         "postsAndComments": "30",
         "passionateAbout": "#Fun & Games #Hiking #Disco",
         "posts": [
             {
-                "postId":6, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"What time do restaurant close?",
-                "postContent": "content 6: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["dining"],
-                "comments":
+                "id":6, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"What time do restaurant close?",
+                "content": "content 6: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Sunil",
+                "authorId": "6",
+                "tags":["dining"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 6,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 6,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 6,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -229,36 +456,73 @@
     },
     {
         "id": 7,
-        "name": "Derek",
-        "avatarSrc":"assets/images/user/avatar-12.jpg",
-        "memberSince": "2022",
+        "firstName": "Derek",
+        "lastName": "James",
+        "email":"derek.james@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-12.jpg",
+        "createdAt": "2022",
+        "updatedAt": "2022",
+        "updatedBy":"",
         "postsAndComments": "27",
         "passionateAbout": "#Career #Education #Immigration #Opportunities",
         "posts": [
             {
-                "postId":7, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"Can I work two jobs on a student VISA?",
-                "postContent": "content 7: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["education"],
-                "comments":
+                "id":7, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"Can I work two jobs on a student VISA?",
+                "content": "content 7: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Derek",
+                "authorId": "7",
+                "tags":["education"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 7,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 7,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 7,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -267,36 +531,73 @@
     },
     {
         "id": 8,
-        "name": "Susan",
-        "avatarSrc":"assets/images/user/avatar-13.jpg",
-        "memberSince": "2004",
+        "firstName": "Susan",
+        "lastName": "Hansley",
+        "email":"susan.hansley@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-13.jpg",
+        "createdAt": "2004",
+        "updatedAt": "2004",
+        "updatedBy":"",
         "postsAndComments": "25",
         "passionateAbout": "#Summer Gardening #Designs & Decors #Home improvement",
         "posts": [
             {
-                "postId":8, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"Is it preferable to start on a Fall Term?",
-                "postContent": "content 8: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["education"],
-                "comments":
+                "id":8, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"Is it preferable to start on a Fall Term?",
+                "content": "content 8: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Susan",
+                "authorId": "8",
+                "tags":["education"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 8,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 8,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 8,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -305,36 +606,73 @@
     },
     {
         "id": 9,
-        "name": "Tima",
-        "avatarSrc":"assets/images/user/avatar-14.jpg",
-        "memberSince": "2004",
+        "firstName": "Tima",
+        "lastName": "Cromwell",
+        "email":"timacromwell@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-14.jpg",
+        "createdAt": "2004",
+        "updatedAt": "2005",
+        "updatedBy":"",
         "postsAndComments": "20",
         "passionateAbout": "#Health & Wellness #Community initiatives #Spitituality",
         "posts": [
             {
-                "postId":9, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"Are the bus schedules reliable?",
-                "postContent": "content 9: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["community"],
-                "comments":
+                "id":9, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"Are the bus schedules reliable?",
+                "content": "content 9: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Tima",
+                "authorId": "9",
+                "tags":["community"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 9,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 9,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 9,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
@@ -343,36 +681,73 @@
     },
     {
         "id": 10,
-        "name": "Yongchang",
-        "avatarSrc":"assets/images/user/avatar-5.jpg",
-        "memberSince": "2004",
+        "firstName": "Yongchang",
+        "lastName": "He",
+        "email":"yongchang.he@yy.com",
+        "password":"abcd1234",
+        "picture":"assets/images/user/avatar-7.jpg",
+        "createdAt": "2004",
+        "updatedAt": "2005",
+        "updatedBy":"",
         "postsAndComments": "20",
         "passionateAbout": "#Health & Wellness #Community initiatives #Spitituality",
         "posts": [
             {
-                "postId":10, 
-                "postTimestamp": "MAY 23 2021",
-                "postTitle":"Any personal recommendations for a nice restaurant?",
-                "postContent": "content 10: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
-                "postTags":["food"],
-                "comments":
+                "id":10, 
+                "createdAt": "MAY 23 2021",
+                "updatedAt": "",
+                "title":"Any personal recommendations for a nice restaurant?",
+                "content": "content 10: For the past two years, Saskatchewan has experienced warmer weather than normal and less precipitation than our neighbours in the Eastern provinces. While this makes winter more manageable in some ways, it messes with other things that affect us.Whether you fly south for the winter months or put on those holey long johns and hunker down with a hot cup of cocoa, it’s important to be prepared for extreme winter weather events. Just because you’re sipping piña coladas in 35 C, doesn’t mean your house is. The more we can anticipate and plan for these events, the more we can reduce their risks and impacts on us.",
+                "published": true,
+                "publishedAt": "",
+                "author": "Yongchang",
+                "authorId": "10",
+                "tags":["food"],
+                "postComments":
                     [
                         {
-                            "commentId":1, 
-                            "commenterName": "Chris",
-                            "commenterRemark": "Lorem ipsum dolor matar....",
-                            "comments":[
+                            "id":1, 
+                            "postId": 10,
+                            "author": "Natalya",
+                            "authorId": 1,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": "",
+                            "postComments":[
                                 {
-                                    "commentId":3, 
-                                    "commenterName": "Prakhyat",
-                                    "commenterRemark": "Lorem ipsum dolor matar...."
+                                    "id":3, 
+                                    "postId": 10,
+                                    "author": "Maria",
+                                    "authorId": 3,
+                                    "post": "",
+                                    "partOf": "",
+                                    "parentPostComment": "",
+                                    "childrenPostComments": "",
+                                    "content": "Lorem ipsum dolor matar....",
+                                    "published": true,
+                                    "createdAt": "",
+                                    "publishedAt": ""
                                 }
                             ]
                         },
                         {
-                            "commentId":2, 
-                            "commenterName": "Yongchang",
-                            "commenterRemark": "Lorem ipsum dolor matar...."
+                            "id":2, 
+                            "postId": 10,
+                            "author": "Olu",
+                            "authorId": 2,
+                            "post": "",
+                            "partOf": "",
+                            "parentPostComment": "",
+                            "childrenPostComments": "",
+                            "content": "Lorem ipsum dolor matar....",
+                            "published": true,
+                            "createdAt": "",
+                            "publishedAt": ""
                         }
                         
                     ]
