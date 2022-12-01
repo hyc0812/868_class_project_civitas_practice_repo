@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import SampleJSON from 'src/fake-data/search-result-aoa-data.json';
-import { random } from 'lodash-es';
+import MembersDB from '../../../../fake-data/members.json';
 
 
 @Component({
@@ -8,10 +8,13 @@ import { random } from 'lodash-es';
   templateUrl: './blogs.component.html',
   styleUrls: ['./blogs.component.scss']
 })
+
+
 export class BlogsComponent implements OnInit {
+
   constructor() {}
   dtRowSelectOptions: any = {};
-  topics: any[] = SampleJSON;
+  topics: any[] = MembersDB;
   
 
   ngOnInit(): void {
@@ -27,20 +30,16 @@ export class BlogsComponent implements OnInit {
       data: returnedData, //'fake-data/search-result-data.json',
       columns: [
         {
-          title: 'Title'
-          //data: 'title'
+          "title" : "Title",
+          "data" : "posts[,,,].title"
         },
         {
-          title: 'Post Type'
-          //data: 'postType'
+          "title": 'Posted On',
+          "data" : "posts[,].createdAt"
         },
         {
-          title: 'Posted On'
-          //data: 'postedOn'
-        },
-        {
-          title: 'Author'
-          //data: 'author'
+          "title": "Author",
+          "data": "posts[,,,,,,,].author"
         },
         {
           title: 'Action',
