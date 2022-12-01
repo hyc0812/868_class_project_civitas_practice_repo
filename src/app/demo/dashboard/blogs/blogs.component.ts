@@ -47,7 +47,7 @@ export class BlogsComponent implements OnInit {
             "data": null,
             //"defaultContent": '<button class="btn btn-outline-primary btn-sm">View</button>',
             //"defaultContent":'<a [routerLink]="[/dashboard/blogs/show-blog, memberPost.id]"  type="button"  (click)="onSelect(memberPost)" >View </a>',
-            "defaultContent":'<a href="/dashboard/blogs/show-blog/1"  type="button" >View </a>',
+            "defaultContent":'<a href="/dashboard/blogs/show-blog/:id"  type="button" >View </a>',
             "targets": -1
           
         }
