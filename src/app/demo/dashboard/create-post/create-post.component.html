@@ -100,11 +100,11 @@
         <input type="text" class="form-control" id="title"
                required
                [(ngModel)]="model.title" name="title"
-               #name="ngModel" placeholder="Add your title">
-        <!-- <div [hidden]="title.valid || title.pristine"
+               #title="ngModel" placeholder="Add your title">
+        <div [hidden]="title.valid || title.pristine"
              class="alert alert-danger">
           Title is required
-        </div> -->
+        </div>
       </div>
 
       <div class="form-group">
@@ -112,32 +112,35 @@
         <select class="form-control" id="tag"
                 required
                 [(ngModel)]="model.tag" name="tag"
-                #power="ngModel" placeholder="a tag please...">
+                #tag="ngModel" >
           <option *ngFor="let tag of tags" [value]="tag">{{tag}}</option>
         </select>
         <!-- <div [hidden]="tag.valid || tag.pristine" class="alert alert-danger">
-          Power is required
+          selection is required
         </div> -->
       </div>
 
       <div class="form-group">
-        <label for="tag"><h6>Where to post:</h6></label>
+        <label for="postOn"><h6>Where to post:</h6></label>
         <select class="form-control" id="postOn"
                 required
                 [(ngModel)]="model.postOn" name="postOn"
-                #power="ngModel" >
-          <option *ngFor="let place of postOn" [value]="place">{{place}}</option>
+                #postOn="ngModel" >
+          <option *ngFor="let place of postOns" [value]="place">{{place}}</option>
         </select>
-        <!-- <div [hidden]="tags.valid || tags.pristine" class="alert alert-danger">
-          Power is required
+        <!-- <div [hidden]="postOn.valid || postOn.pristine" class="alert alert-danger">
+          selection is required
         </div> -->
       </div>
 
 
       <div class="form-group">
         <label for="content"><h6>Content</h6></label>
-        <textarea class="form-control" id="content"
+        <textarea class="form-control" id="content" required #content="ngModel"
                [(ngModel)]="model.content" name="content" rows="4" placeholder="Write down your story ..."></textarea>
+        <div [hidden]="content.valid || content.pristine" class="alert alert-danger">
+                content is required
+        </div>
       </div>
 
 

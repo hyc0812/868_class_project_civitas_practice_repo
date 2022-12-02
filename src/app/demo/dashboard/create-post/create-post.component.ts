@@ -12,18 +12,13 @@ export class CreatePostComponent implements OnInit {
 
   tags = ['Weather', 'Family', 'Community', 'Wellness', 'Food', 'Drinks', 'Fine Dining', 'Immigration', 'Education'];
 
-  postOn = ['FAQs', 'Blogs'];
+  postOns = ['FAQs', 'Blogs'];
 
   model = new Post(12, '', '', '', '', '');
 
-  
   submitted = false;
-  title: any;
-  tag: any;
 
   onSubmit() { this.submitted = true; }
-
-
 
   newHero() {
     this.model = new Post(42, '', '', '', '', '');
@@ -41,10 +36,10 @@ export class CreatePostComponent implements OnInit {
 
   // Reveal in html:
   //   Name via form.controls = {{showFormControls(heroForm)}}
-  showFormControls(form: any) {
-    return form && form.controls.name &&
-    form.controls.name.value; // Dr. IQ
-  }
+  // showFormControls(form: any) {
+  //   return form && form.controls.name &&
+  //   form.controls.name.value; // Dr. IQ
+  // }
 
   /////////////////////////////
 
@@ -52,7 +47,6 @@ export class CreatePostComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
