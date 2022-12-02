@@ -87,6 +87,50 @@ const NavigationItems = [
             url: '/dashboard/more'
           },
           {
+            id: 'signup',
+            title: 'Sign up v5',
+            type: 'item',
+            url: '/auth/signupv5',
+            target: true,
+            breadcrumbs: false,
+            // badge: {
+            //   title: 'New',
+            //   type: 'label-primary'
+            // }
+          },
+          {
+            id: 'signin',
+            title: 'Sign in v5',
+            type: 'item',
+            url: '/auth/signinv5',
+            target: true,
+            breadcrumbs: false,
+            // badge: {
+            //   title: 'New',
+            //   type: 'label-primary'
+            // }
+          },
+          {
+            id: 'reset-password',
+            title: 'Reset Password v5',
+            type: 'item',
+            url: '/auth/reset-passwordv5',
+            target: true,
+            breadcrumbs: false,
+            // badge: {
+            //   title: 'New',
+            //   type: 'label-primary'
+            // }
+          },
+          {
+            id: 'change-password',
+            title: 'Change Password',
+            type: 'item',
+            url: '/auth/change-password',
+            target: true,
+            breadcrumbs: false
+          },
+          {
             id: 'e-commerce',
             title: 'Ecommerce',
             type: 'item',
