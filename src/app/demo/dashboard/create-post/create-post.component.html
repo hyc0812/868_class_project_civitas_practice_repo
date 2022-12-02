@@ -70,27 +70,25 @@
       </div>
     </app-card>
   </div> -->
-
   <!-- <h5 class="mt-5">Form Grid</h5>
   <hr /> -->
-
 <!-- <app-pell-wysiwyg></app-pell-wysiwyg>
-
 <button type="button" class="btn btn-primary btn-lg">Publish</button>
 <button type="button" class="btn btn-outline-primary">Save Draft</button> -->
 
 
-
+{{ model | json }}
+<hr>
 <div class="container">
   <div [hidden]="submitted">
-    <h1>Hero Form</h1>
+    <!-- <h3>Create a Post</h3> -->
     <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
       <div class="form-group">
-        <label for="name">Name</label>
+        <label for="name"><h6>Name </h6></label>
         <input type="text" class="form-control" id="name"
                required
                [(ngModel)]="model.name" name="name"
-               #name="ngModel">
+               #name="ngModel" placeholder="Please input your username">
         <div [hidden]="name.valid || name.pristine"
              class="alert alert-danger">
           Name is required
@@ -98,54 +96,107 @@
       </div>
 
       <div class="form-group">
-        <label for="alterEgo">Alter Ego</label>
-        <input type="text" class="form-control" id="alterEgo"
-               [(ngModel)]="model.alterEgo" name="alterEgo">
+        <label for="title"><h6>Title</h6></label>
+        <input type="text" class="form-control" id="title"
+               required
+               [(ngModel)]="model.title" name="title"
+               #name="ngModel" placeholder="Add your title">
+        <!-- <div [hidden]="title.valid || title.pristine"
+             class="alert alert-danger">
+          Title is required
+        </div> -->
       </div>
 
       <div class="form-group">
-        <label for="power">Hero Power</label>
-        <select class="form-control" id="power"
+        <label for="tag"><h6>Select a tag:</h6></label>
+        <select class="form-control" id="tag"
                 required
-                [(ngModel)]="model.power" name="power"
-                #power="ngModel">
-          <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
+                [(ngModel)]="model.tag" name="tag"
+                #power="ngModel" placeholder="a tag please...">
+          <option *ngFor="let tag of tags" [value]="tag">{{tag}}</option>
         </select>
-        <div [hidden]="power.valid || power.pristine" class="alert alert-danger">
+        <!-- <div [hidden]="tag.valid || tag.pristine" class="alert alert-danger">
           Power is required
-        </div>
+        </div> -->
       </div>
 
-      <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
-      <button type="button" class="btn btn-default" (click)="newHero(); heroForm.reset()">New Hero</button>
-      <i>with</i> reset
+      <div class="form-group">
+        <label for="tag"><h6>Where to post:</h6></label>
+        <select class="form-control" id="postOn"
+                required
+                [(ngModel)]="model.postOn" name="postOn"
+                #power="ngModel" >
+          <option *ngFor="let place of postOn" [value]="place">{{place}}</option>
+        </select>
+        <!-- <div [hidden]="tags.valid || tags.pristine" class="alert alert-danger">
+          Power is required
+        </div> -->
+      </div>
 
-      &nbsp;&nbsp;
+
+      <div class="form-group">
+        <label for="content"><h6>Content</h6></label>
+        <textarea class="form-control" id="content"
+               [(ngModel)]="model.content" name="content" rows="4" placeholder="Write down your story ..."></textarea>
+      </div>
+
+
+
+
+      <button type="submit" class="btn btn-primary btn-lg" [disabled]="!heroForm.form.valid">Publish</button>
+      <button type="button" class="btn btn-outline-primary">Save Draft</button>
+      
+      
+      
+      <button type="button" class="btn btn-outline-primary" (click)="newHero(); heroForm.reset()">Reset</button>
+      <!-- <i>with</i> reset -->
+
+      <!-- &nbsp;&nbsp;
       <button type="button" class="btn btn-default" (click)="newHero()">New Hero</button>
-      <i>without</i> reset
+      <i>without</i> reset -->
 
      <!-- NOT SHOWN IN DOCS -->
-      <div>
+      <!-- <div>
         <hr>
         Name via form.controls = {{showFormControls(heroForm)}}
-      </div>
-     <!-- - -->
+      </div> -->
+
     </form>
   </div>
 
+
+
+
+
+
+
+
   <div [hidden]="!submitted">
     <h2>You submitted the following:</h2>
+
     <div class="row">
       <div class="col-xs-3">Name</div>
       <div class="col-xs-9">{{ model.name }}</div>
     </div>
+
     <div class="row">
-      <div class="col-xs-3">Alter Ego</div>
-      <div class="col-xs-9">{{ model.alterEgo }}</div>
+      <div class="col-xs-3">Title</div>
+      <div class="col-xs-9">{{ model.title }}</div>
     </div>
+
     <div class="row">
-      <div class="col-xs-3">Power</div>
-      <div class="col-xs-9">{{ model.power }}</div>
+      <div class="col-xs-3">Tag</div>
+      <div class="col-xs-9">{{ model.tag }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3">postOn</div>
+      <div class="col-xs-9">{{ model.postOn }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3">Content</div>
+      <div class="col-xs-9">{{ model.content }}</div>
     </div>
     <br>
     <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
@@ -162,7 +213,7 @@
   </div>
 
 <!-- ====================================================  -->
-<hr>
+<!-- <hr>
 <style>
   .no-style .ng-valid {
   border-left: 1px  solid #CCC
@@ -187,7 +238,7 @@
         </div>
 
         <div class="form-group">
-          <label for="power">Hero Power</label>
+          <label for="power">Select a tag:</label>
           <select class="form-control" id="power" required>
             <option *ngFor="let pow of powers" [value]="pow">{{pow}}</option>
           </select>
@@ -196,10 +247,10 @@
         <button type="submit" class="btn btn-success">Submit</button>
 
       </form>
-  </div>
+  </div> -->
 
   <!-- ====================================================  -->
-  <hr>
+  <!-- <hr>
   <div class="container">
       <h1>Hero Form</h1>
       <form #heroForm="ngForm">
@@ -229,10 +280,10 @@
         <button type="submit" class="btn btn-success">Submit</button>
 
       </form>
-  </div>
+  </div> -->
 
   <!-- EXTRA MATERIAL FOR DOCUMENTATION -->
-  <hr>
+  <!-- <hr>
     <input type="text" class="form-control" id="name"
            required
            [(ngModel)]="model.name" name="name">
@@ -243,4 +294,4 @@
            [ngModel]="model.name" name="name"
            (ngModelChange)="model.name = $event">
     TODO: remove this: {{model.name}}
-</div>
+</div> -->

@@ -5,18 +5,18 @@ import { SharedModule } from 'src/app/theme/shared/shared.module';
 import { CreatePostRoutingModule } from './create-post-routing.module';
 import { FilesUploadModule } from '../../extension/files-upload/files-upload.module';
 import { PellWysiwygModule } from '../../extension/editor/pell-wysiwyg/pell-wysiwyg.module';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    CreatePostComponent,
-
+    CreatePostComponent
   ],
+  exports: [CreatePostComponent],
   imports: [
     CommonModule,
     SharedModule,
     CreatePostRoutingModule,
-    FilesUploadModule,
+    FormsModule,
     PellWysiwygModule
   ]
 })

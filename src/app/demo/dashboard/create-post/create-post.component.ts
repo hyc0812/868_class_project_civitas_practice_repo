@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Hero } from './hero';
+import  {Post}  from './post';
 
 
 @Component({
@@ -7,30 +7,35 @@ import { Hero } from './hero';
   templateUrl: './create-post.component.html',
   styleUrls: ['./create-post.component.scss']
 })
+
 export class CreatePostComponent implements OnInit {
 
-  powers = ['Really Smart', 'Super Flexible',
-  'Super Hot', 'Weather Changer'];
+  tags = ['Weather', 'Family', 'Community', 'Wellness', 'Food', 'Drinks', 'Fine Dining', 'Immigration', 'Education'];
 
-  model = new Hero(18, 'Dr. IQ', this.powers[0], 'Chuck Overstreet');
+  postOn = ['FAQs', 'Blogs'];
 
+  model = new Post(12, '', '', '', '', '');
+
+  
   submitted = false;
+  title: any;
+  tag: any;
 
   onSubmit() { this.submitted = true; }
 
 
 
   newHero() {
-    this.model = new Hero(42, '', '');
+    this.model = new Post(42, '', '', '', '', '');
   }
 
-  skyDog(): Hero {
-    const myHero =  new Hero(42, 'SkyDog',
-                           'Fetch any object at any distance',
-                           'Leslie Rollover');
-    console.log('My hero is called ' + myHero.name); // "My hero is called SkyDog"
-    return myHero;
-  }
+  // skyDog(): Post {
+  //   const myHero =  new Post(42, 'SkyDog',
+  //                          'Fetch any object at any distance',
+  //                          'Leslie Rollover');
+  //   console.log('My hero is called ' + myHero.name); // "My hero is called SkyDog"
+  //   return myHero;
+  // }
 
   //////// NOT SHOWN IN DOCS ////////
 
