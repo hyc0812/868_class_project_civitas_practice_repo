@@ -1,3 +1,4 @@
+{{ newUser | json }}
 <div class="auth-wrapper aut-bg-img">
   <div class="auth-content">
     <div class="card">
@@ -5,23 +6,101 @@
         <div class="mb-4">
           <i class="feather icon-user-plus auth-icon"></i>
         </div>
+
+        
         <h3 class="mb-4">Sign up</h3>
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username" />
-        </div>
-        <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email" />
-        </div>
-        <div class="input-group mb-4">
-          <input type="password" class="form-control" placeholder="password" />
-        </div>
-        <div class="form-group text-left">
-          <div class="checkbox checkbox-fill d-inline">
-            <input type="checkbox" name="checkbox-fill-2" id="checkbox-fill-2" />
-            <label for="checkbox-fill-2" class="cr">Send me the <a href="#!"> Newsletter</a> weekly.</label>
+
+        <form (ngSubmit)="onSubmit()" #signUpForm="ngForm">
+
+          <div class="input-group mb-3">
+            <input 
+              type="email" 
+              class="form-control" 
+              placeholder="Email" 
+              id="email"
+              name="email"
+              required
+              [(ngModel)]="newUser.email"
+              #email="ngModel" />
+            <div [hidden]="email.valid || email.pristine"
+            class="alert alert-danger">
+              email is required
+            </div>
           </div>
-        </div>
-        <button class="btn btn-primary shadow-2 mb-4">Sign up</button>
+
+          
+          
+          <div class="input-group mb-3">
+            <input 
+              type="text" 
+              class="form-control" 
+              placeholder="First Name"
+              id="firstName"
+              name="firstName"
+              required
+              [(ngModel)]="newUser.firstName"
+              #firstName="ngModel"/>
+            <div [hidden]="firstName.valid || firstName.pristine"
+              class="alert alert-danger">
+           Name is required
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <input 
+              type="text" 
+              class="form-control" 
+              placeholder="Last Name"
+              id="lastName"
+              name="lastName"
+              required
+              [(ngModel)]="newUser.lastName"
+              #lastName="ngModel"/>
+            <div [hidden]="lastName.valid || lastName.pristine"
+              class="alert alert-danger">
+           Name is required
+            </div>
+          </div>
+
+
+
+
+
+          <div class="input-group mb-4">
+            <input 
+            type="password" 
+            class="form-control" 
+            placeholder="password" 
+            id="password"
+            name="password"
+            required
+            [(ngModel)]="newUser.password"
+            #password="ngModel" />
+            
+          </div>
+          <div [hidden]="password.valid || password.pristine"
+            class="alert alert-danger">
+              password is required
+            </div>
+
+          <div class="form-group text-left">
+            <div class="checkbox checkbox-fill d-inline">
+              <input 
+                type="checkbox" 
+                name="checkbox-fill-2" 
+                id="checkbox-fill-2" 
+                required
+                [(ngModel)]="newUser.isSubscribe"
+                />
+              <label for="checkbox-fill-2" class="cr">Send me the <a href="#!"> Newsletter</a> weekly.</label>
+            </div>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary shadow-2 mb-4">Sign up</button>
+          
+        </form>
+
         <p class="mb-0 text-muted">
           Already have an account?
           <a [routerLink]="['/auth/signinv5']"> Log in</a>
