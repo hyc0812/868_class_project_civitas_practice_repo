@@ -1,3 +1,4 @@
+{{ signInUser | json }}
 <div class="auth-wrapper aut-bg-img">
   <div class="auth-content">
     <div class="card">
@@ -6,19 +7,64 @@
           <i class="feather icon-unlock auth-icon"></i>
         </div>
         <h3 class="mb-4">Login</h3>
-        <div class="input-group mb-3">
-          <input type="email" class="form-control" placeholder="Email" />
-        </div>
-        <div class="input-group mb-4">
-          <input type="password" class="form-control" placeholder="password" />
-        </div>
-        <div class="form-group text-left">
-          <div class="checkbox checkbox-fill d-inline">
-            <input type="checkbox" name="checkbox-fill-1" id="checkbox-fill-a1" checked="" />
-            <label for="checkbox-fill-a1" class="cr"> Save credentials</label>
+
+        <form (ngSubmit)="onSubmit()" #signInForm="ngForm">
+          <div class="input-group mb-3">
+            <input 
+              type="email" 
+              class="form-control" 
+              id="email"
+              name="email"
+              placeholder="Email" 
+              required
+              [(ngModel)]="signInUser.email"
+              #email="ngModel"  />
+
+            <div [hidden]="email.valid || email.pristine"
+              class="alert alert-danger">
+              email is required
+            </div>  
           </div>
-        </div>
-        <button class="btn btn-primary mb-4">Login</button>
+
+
+          <div class="input-group mb-4">
+            <input 
+              type="password" 
+              class="form-control" 
+              placeholder="password" 
+              id="password"
+              name="password"
+              required
+              [(ngModel)]="signInUser.password"
+              #password="ngModel"  
+                />
+              <div [hidden]="password.valid || password.pristine"
+              class="alert alert-danger">
+              password is required
+            </div>  
+          </div>
+
+
+          <div class="form-group text-left">
+            <div class="checkbox checkbox-fill d-inline">
+              <input 
+                type="checkbox" 
+                name="checkbox-fill-1" 
+                id="checkbox-fill-a1" 
+                checked="" 
+                required
+                [(ngModel)]="signInUser.isSaveCredentials"
+                 #password="ngModel"  
+                />
+              <label for="checkbox-fill-a1" class="cr"> Save credentials</label>
+            </div>
+          </div>
+        
+
+        <button type="submit" class="btn btn-primary mb-4">Login</button>
+
+        </form>
+
         <p class="mb-2 text-muted">
           Forgot password?
           <a [routerLink]="['/auth/reset-passwordv5']">Reset</a>
