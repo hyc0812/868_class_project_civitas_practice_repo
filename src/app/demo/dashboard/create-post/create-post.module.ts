@@ -6,6 +6,7 @@ import { CreatePostRoutingModule } from './create-post-routing.module';
 import { FilesUploadModule } from '../../extension/files-upload/files-upload.module';
 import { PellWysiwygModule } from '../../extension/editor/pell-wysiwyg/pell-wysiwyg.module';
 import { FormsModule } from '@angular/forms';
+import { TagInputModule } from 'ngx-chips';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     CreatePostRoutingModule,
     FormsModule,
-    PellWysiwygModule
+    PellWysiwygModule,
+    TagInputModule
   ]
 })
 export class CreatePostModule { }
