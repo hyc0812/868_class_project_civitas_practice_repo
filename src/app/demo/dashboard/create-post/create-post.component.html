@@ -21,12 +21,12 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-3">postOn</div>
+      <div class="col-xs-3"><h4>postOn</h4></div>
       <div class="col-xs-9">{{ model.postOn }}</div>
     </div>
 
     <div class="row">
-      <div class="col-xs-3">Content</div>
+      <div class="col-xs-3"><h4>Content</h4></div>
       <div class="col-xs-9">{{ model.content }}</div>
     </div>
     <br>
@@ -66,11 +66,12 @@
 
 
       <div class="form-group">
-        <label for="tags"><h5>Add your tags (up to 4):</h5></label>
+        <label for="tags"><h5>Add up to 4 tags</h5>(double click to modify):</label>
         <tag-input 
           class="tag-chips" 
           id="tags"
           name="tags"
+          required
           [(ngModel)]="model.tags" 
           [modelAsStrings]="true"
           [editable]="true" 
