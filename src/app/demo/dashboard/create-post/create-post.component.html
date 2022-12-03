@@ -6,17 +6,17 @@
     <h2>You submitted the following:</h2>
 
     <div class="row">
-      <div class="col-xs-3">Name</div>
+      <div class="col-xs-3"><h4>Name</h4></div>
       <div class="col-xs-9">{{ model.name }}</div>
     </div>
 
     <div class="row">
-      <div class="col-xs-3">Title</div>
+      <div class="col-xs-3"><h4>Title</h4></div>
       <div class="col-xs-9">{{ model.title }}</div>
     </div>
 
     <div class="row">
-      <div class="col-xs-3">Tag</div>
+      <div class="col-xs-3"><h4>Tag</h4></div>
       <div class="col-xs-9">{{ model.tags }}</div>
     </div>
 
@@ -40,7 +40,7 @@
 
       <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
         <div class="form-group">
-          <label for="name"><h6>Name </h6></label>
+          <label for="name"><h5>Name </h5></label>
           <input type="text" class="form-control" id="name"
                  required
                  [(ngModel)]="model.name" name="name"
@@ -52,7 +52,7 @@
         </div>
   
         <div class="form-group">
-          <label for="title"><h6>Title</h6></label>
+          <label for="title"><h5>Title</h5></label>
           <input type="text" class="form-control" id="title"
                  required
                  [(ngModel)]="model.title" name="title"
@@ -66,7 +66,7 @@
 
 
       <div class="form-group">
-        <label for="tags"><h6>Add your tags (up to 4):</h6></label>
+        <label for="tags"><h5>Add your tags (up to 4):</h5></label>
         <tag-input 
           class="tag-chips" 
           id="tags"
@@ -82,7 +82,7 @@
       </div>
   
         <div class="form-group">
-          <label for="postOn"><h6>Where to post:</h6></label>
+          <label for="postOn"><h5>Where to post:</h5></label>
           <select class="form-control" id="postOn"
                   required
                   [(ngModel)]="model.postOn" name="postOn"
@@ -93,7 +93,7 @@
   
   
         <div class="form-group">
-          <label for="content"><h6>Content</h6></label>
+          <label for="content"><h5>Content</h5></label>
           <textarea class="form-control" id="content" required #content="ngModel"
                  [(ngModel)]="model.content" name="content" rows="4" placeholder="Write down your story ..."></textarea>
           <div [hidden]="content.valid || content.pristine" class="alert alert-danger">
