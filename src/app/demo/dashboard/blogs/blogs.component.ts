@@ -44,12 +44,15 @@ export class BlogsComponent implements OnInit {
           title: 'Action',
           
             "data": null,
-            //"defaultContent": '<button class="btn btn-outline-primary btn-sm">View</button>',
-            //"defaultContent":'<a [routerLink]="[/dashboard/blogs/show-blog, memberPost.id]"  type="button"  (click)="onSelect(memberPost)" >View </a>',
-            //"defaultContent":'<a routerLink="/dashboard/blogs/show-blog/{{ memberPost.postId }}" (click)="onSelect(memberPost)" type="button" >View </a>',
-            "defaultContent":`<a href=/dashboard/blogs/show-blog/${this.topics[1].id} type="button" >View </a>`,
-            "targets": -1
-          
+            render: function (data, type, row, meta) {
+              return (
+                '<a href=/dashboard/blogs/show-blog/' +
+                data.id +
+                '>' +
+                '<button class="btn btn-outline-primary btn-sm">View</button>' +
+                '</a>'
+              );
+            },
         }      
       ],
       responsive: true,
@@ -57,3 +60,5 @@ export class BlogsComponent implements OnInit {
     };
   }
 }
+
+
