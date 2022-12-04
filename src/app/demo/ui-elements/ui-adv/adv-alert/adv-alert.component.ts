@@ -34,6 +34,7 @@ export class AdvAlertComponent implements OnInit {
     }).then((result) => {
       if (result.value) {
         Swal.fire('', `You typed: ${result.value}`);
+        // Swal.fire('', console.log("hello"));
       }
     });
   }

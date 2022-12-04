@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { FileUploadValidators } from '@iplab/ngx-file-upload';
+import Swal from 'sweetalert2';
 import { UserProfile } from './userProfile';
 
 @Component({
@@ -23,6 +24,20 @@ export class ProfileComponent implements OnInit {
   onSubmit() { 
     this.submitted = true; 
     console.log(this.userProfile)
+  }
+
+  updateAlert() {
+    Swal.fire({
+      title: 'Profile Updated!',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1500
+    }).then((isOkay) => {
+      if (isOkay){
+        this.onSubmit;
+      }
+    }
+    );
   }
 
   public isCompleteStatus = false;

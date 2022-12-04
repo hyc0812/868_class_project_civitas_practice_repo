@@ -100,10 +100,35 @@
                   content is required
           </div>
         </div>
-  
 
-        <button type="submit" class="btn btn-primary btn-lg" [disabled]="!heroForm.form.valid">Publish</button>
-        <button type="button" class="btn btn-outline-primary">Save Draft</button>
+
+          <!-- [swal]="{
+          title: 'Good job!',
+          icon: 'success',
+          text: 'Your Post has been submitted!',
+          showConfirmButton: false,
+          timer: 1500
+          }"   -->
+
+
+        <button 
+          type="submit" class="btn btn-primary btn-lg" 
+          [disabled]="!heroForm.form.valid" (click)="submitAlert()">Publish</button>
+
+
+        <button 
+          type="button" 
+          class="btn btn-outline-primary"
+          [swal]="{
+            title: 'Draft Saved!',
+            icon: 'success',
+            showConfirmButton: false,
+            timer: 1500
+            }"
+          [disabled]="!heroForm.form.valid"
+
+
+          >Save Draft</button>
         
       
         <button type="button" class="btn btn-outline-primary" (click)="newHero(); heroForm.reset()">Reset</button>
@@ -188,3 +213,20 @@
       </p>
       <tag-input class="tag-chips" [theme]="'minimal-danger'" [ngModel]="['Amsterdam', 'Washington', 'Sydney']" name="items"></tag-input>
     </div> -->
+
+
+
+
+
+
+    <!-- <button
+    type="button"
+    class="btn btn-success"
+    [swal]="{
+      title: 'Good job!',
+      icon: 'success',
+      text: 'You clicked the button!'
+    }"
+  >
+    Success
+  </button> -->

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import  {Post}  from './post';
 import { UntypedFormControl } from '@angular/forms';
+import Swal from 'sweetalert2';
 
 
 
@@ -20,7 +21,24 @@ export class CreatePostComponent implements OnInit {
 
   submitted = false;
 
-  onSubmit() { this.submitted = true; }
+  onSubmit() { 
+    this.submitted = true;
+    console.log(this.model);
+   }
+
+  submitAlert() {
+    Swal.fire({
+      title: 'Post Published!',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1500
+    }).then((isOkay) => {
+      if (isOkay){
+        this.onSubmit;
+      }
+    }
+    );
+  }
 
   newHero() {
     this.model = new Post(42, '', '', '', '', '');
