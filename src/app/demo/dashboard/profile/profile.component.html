@@ -1,1 +1,309 @@
-<p>profile works!</p>
+{{ userProfile | json }}
+
+<h2>USER DASHBOARD</h2>
+<hr>
+
+<div class="row">
+
+  <!-- [ three cards ] start -->
+  <div class="col-xl-4 col-md-6">
+    <div class="card">
+      <div class="card-block">
+        <div class="row align-items-center justify-content-center">
+          <div class="col">
+            <h3 class="text-c-green">7,154</h3>
+            <h5>Total Reactions</h5>
+          </div>
+          <div class="col text-end">
+            <img src="assets/images/widget/shape1.png" style="width: 80px" alt="activity-user" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-md-6">
+    <div class="card">
+      <div class="card-block">
+        <div class="row align-items-center justify-content-center">
+          <div class="col">
+            <h3 class="text-c-red">8940</h3>
+            <h5>Total post reviews</h5>
+          </div>
+          <div class="col text-end">
+            <img src="assets/images/widget/shape2.png" style="width: 80px" alt="activity-user" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-md-12">
+    <div class="card">
+      <div class="card-block">
+        <div class="row align-items-center justify-content-center">
+          <div class="col">
+            <h3 class="text-c-green">52</h3>
+            <h5>Total posts created</h5>
+          </div>
+          <div class="col text-end">
+            <img src="assets/images/widget/shape3.png" style="width: 80px" alt="activity-user" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- [ three cards ] end -->
+
+
+    <div class="col-sm-8">
+      <app-card cardTitle="User Profile" [options]="false">
+
+        <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+            <div class="form-group">
+              <label for="name"><h5>Name </h5></label>
+              <input type="text" class="form-control" id="name"
+                     required
+                     [(ngModel)]="userProfile.name" name="name"
+                     #name="ngModel" placeholder="Please input your username">
+              <div [hidden]="name.valid || name.pristine"
+                   class="alert alert-danger">
+                Name is required
+              </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email"><h5>Email </h5></label>
+                <input type="text" class="form-control" id="email"
+                       required
+                       [(ngModel)]="userProfile.email" name="email"
+                       #email="ngModel" placeholder="Please input your email">
+                <div [hidden]="email.valid || email.pristine"
+                     class="alert alert-danger">
+                  Email is required
+                </div>
+            </div>
+
+        
+            <div class="form-group">
+                <label for="intro"><h5>Introduction </h5></label>
+                <input type="text" class="form-control" id="intro"
+                        required
+                        [(ngModel)]="userProfile.intro" name="intro"
+                        #intro="ngModel" placeholder="Please add your bio...">
+                <div [hidden]="intro.valid || intro.pristine"
+                    class="alert alert-danger">
+                Introduction is required
+                </div>
+            </div>
+
+            <h5 class="mt-3">User Image</h5>
+            <div class="input-group mb-3">
+                <label for="image" class="input-group-text">Upload</label>
+                <input 
+                    type="file" 
+                    class="form-control" 
+                    id="image"
+                    name="image" 
+                    [(ngModel)]="userProfile.image"
+                    #image="ngModel" placeholder="add your new image">
+            </div>
+
+
+            <div class="card-block team-leader">
+                <div class="row">
+                  <div class="col-auto">
+                    <img class="rounded-circle" style="width: 85px" src="assets/images/user/avatar-6.jpg" width="50" height="90"  alt="activity-user" />
+                  </div>
+                  <div class="col">
+                    <h5 class="mb-2">New Image Preview</h5>
+                    <span class="f-w-300 text-muted mb-1 d-block">Member since 2009 </span>
+                    <span class="f-w-300 text-muted mb-3 d-block"> 43 Posts and comments</span>
+                  </div>
+                </div>
+            </div> 
+
+            
+            <button type="submit" class="btn btn-primary btn-lg" [disabled]="!heroForm.form.valid">Update</button>
+
+        </form>
+
+        
+
+      </app-card>
+    </div>
+
+
+    <div class="col-xl-4 col-lg-12">
+        <app-card cardTitle="User Rating" cardClass="task-board-left" [options]="false">
+
+          <div class="task-right">
+            <!-- complete status -->
+            <div
+              class="task-right-header-status"
+              (click)="isCompleteStatus = !isCompleteStatus"
+              [attr.aria-expanded]="!isCompleteStatus"
+              aria-controls="completeStatus"
+            >
+              <span class="f-w-400">Performance</span>
+              <i class="fas fa-caret-down float-end m-t-5"></i>
+            </div>
+            <div id="completeStatus" [ngbCollapse]="isCompleteStatus" class="taskboard-right-progress">
+              <h6 class="m-t-10">Very Responsive</h6>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 80%"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <h6 class="m-t-15">Good commentor</h6>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 70%"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <h6 class="m-t-15">Good Poster</h6>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 50%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <h6 class="m-t-15">To the point</h6>
+              <div class="progress">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="60"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <!-- assign users -->
+            <!-- <div
+              class="task-right-header-users"
+              (click)="isAssignUsers = !isAssignUsers"
+              [attr.aria-expanded]="!isAssignUsers"
+              aria-controls="assignUsers"
+            >
+              <span class="f-w-400" data-toggle="collapse">Assign Users</span>
+              <i class="fas fa-caret-down float-end m-t-5"></i>
+            </div>
+            <div id="assignUsers" [ngbCollapse]="isAssignUsers" class="user-box assign-user taskboard-right-users">
+              <div class="media mb-2">
+                <div class="media-left media-middle me-3">
+                  <a href="javascript:">
+                    <img class="media-object img-radius" src="assets/images/user/avatar-1.jpg" alt="Generic placeholder image" />
+                    <div class="live-status bg-danger"></div>
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h6>Josephin Doe</h6>
+                  <p>Santa Ana,CA</p>
+                </div>
+              </div>
+              <div class="media mb-2">
+                <div class="media-left media-middle me-3">
+                  <a href="javascript:">
+                    <img class="media-object img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image" />
+                    <div class="live-status bg-success"></div>
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h6>Josephin Doe</h6>
+                  <p>Huntingston, NJ</p>
+                </div>
+              </div>
+              <div class="media mb-2">
+                <div class="media-left media-middle me-3">
+                  <a href="javascript:">
+                    <img class="media-object img-radius" src="assets/images/user/avatar-3.jpg" alt="Generic placeholder image" />
+                    <div class="live-status bg-danger"></div>
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h6>Josephin Doe</h6>
+                  <p>Willingstion, WA</p>
+                </div>
+              </div>
+              <div class="media mb-2">
+                <div class="media-left media-middle me-3">
+                  <a href="javascript:">
+                    <img class="media-object img-radius" src="assets/images/user/avatar-2.jpg" alt="Generic placeholder image" />
+                    <div class="live-status bg-success"></div>
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h6>Josephin Doe</h6>
+                  <p>Illions, IL</p>
+                </div>
+              </div>
+            </div> -->
+            <!-- revision -->
+            <div
+              class="task-right-header-revision"
+              (click)="isRevision = !isRevision"
+              [attr.aria-expanded]="!isRevision"
+              aria-controls="revision"
+            >
+              <span class="f-w-400" data-toggle="collapse">Announcements</span>
+              <i class="fas fa-caret-down float-end m-t-5"></i>
+            </div>
+            <div id="revision" [ngbCollapse]="isRevision" class="taskboard-right-revision user-box">
+              <div class="media">
+                <div class="media-left">
+                  <a class="btn btn-outline-primary btn-icon" href="javascript:" role="button"><i class="fas fa-cogs"></i> </a>
+                </div>
+                <div class="media-body">
+                  <div class="chat-header f-w-400 mb-1">Prakhyat published a new FAQs!</div>
+                  <p class="chat-header text-muted">4 minutes ago</p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a class="btn btn-outline-danger btn-icon" href="javascript:" role="button"><i class="fas fa-share-alt"></i> </a>
+                </div>
+                <div class="media-body">
+                  <div class="chat-header f-w-400 mb-1">Maria published a new Post!</div>
+                  <p class="chat-header text-muted">12 Dec,2022</p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a class="btn btn-outline-warning btn-icon" href="javascript:" role="button"><i class="fas fa-font"></i> </a>
+                </div>
+                <div class="media-body">
+                  <div class="chat-header f-w-400 mb-1">Jide gave a comment to your Post.</div>
+                  <p class="chat-header text-muted">30 minutes ago</p>
+                </div>
+              </div>
+              <div class="media">
+                <div class="media-left">
+                  <a class="btn btn-outline-success btn-icon" href="javascript:" role="button"><i class="fas fa-mobile-alt"></i> </a>
+                </div>
+                <div class="media-body">
+                  <div class="chat-header">Lisa gave a comment to your Post.</div>
+                  <p class="chat-header text-muted">2 hours ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </app-card>
+      </div>
+    
+  </div>
