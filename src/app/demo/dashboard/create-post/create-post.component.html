@@ -1,6 +1,5 @@
 
 
-{{ model | json }}
 
   <div [hidden]="!submitted">
     <h2>You submitted the following:</h2>
@@ -72,7 +71,7 @@
           id="tags"
           name="tags"
           required
-          [(ngModel)]="model.tags" 
+          [(ngModel)]="model.tags"
           [modelAsStrings]="true"
           [editable]="true" 
           [maxItems]="4"
@@ -113,7 +112,7 @@
   </app-card>
 </div>         
 
-
+{{ model | json }}
 
 
 

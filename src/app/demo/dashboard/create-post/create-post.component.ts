@@ -16,7 +16,7 @@ export class CreatePostComponent implements OnInit {
 
   postOns = ['FAQs', 'Blogs'];
 
-  model = new Post(12, '', '', '', '', '');
+  model = new Post(12, 'Prakhyat', 'Any personal recommendations for a nice restaurant?', '', 'FAQs', 'Hello there, I would like to know ...');
 
   submitted = false;
 
