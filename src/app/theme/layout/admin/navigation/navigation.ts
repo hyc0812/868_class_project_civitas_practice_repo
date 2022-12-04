@@ -75,6 +75,12 @@ const NavigationItems = [
             url: '/dashboard/create-post'
           },
           {
+            id: 'profile',
+            title: 'Profile',
+            type: 'item',
+            url: '/dashboard/profile'
+          },
+          {
             id: 'help',
             title: 'Help',
             type: 'item',
