@@ -130,169 +130,169 @@ const NavigationItems = [
             target: true,
             breadcrumbs: false
           },
-          {
-            id: 'e-commerce',
-            title: 'Ecommerce',
-            type: 'item',
-            url: '/dashboard/e-commerce'
-          },
-          {
-            id: 'crm',
-            title: 'CRM',
-            type: 'item',
-            url: '/dashboard/crm'
-          },
-          {
-            id: 'analytics',
-            title: 'Analytics',
-            type: 'item',
-            url: '/dashboard/analytics'
-          },
-          {
-            id: 'crypto',
-            title: 'Crypto',
-            type: 'item',
-            url: '/dashboard/crypto',
-            badge: {
-              title: 'NEW',
-              type: 'label-danger'
-            }
-          },
-          {
-            id: 'project',
-            title: 'Project',
-            type: 'item',
-            url: '/dashboard/project'
-          }
+          // {
+          //   id: 'e-commerce',
+          //   title: 'Ecommerce',
+          //   type: 'item',
+          //   url: '/dashboard/e-commerce'
+          // },
+          // {
+          //   id: 'crm',
+          //   title: 'CRM',
+          //   type: 'item',
+          //   url: '/dashboard/crm'
+          // },
+          // {
+          //   id: 'analytics',
+          //   title: 'Analytics',
+          //   type: 'item',
+          //   url: '/dashboard/analytics'
+          // },
+          // {
+          //   id: 'crypto',
+          //   title: 'Crypto',
+          //   type: 'item',
+          //   url: '/dashboard/crypto',
+          //   badge: {
+          //     title: 'NEW',
+          //     type: 'label-danger'
+          //   }
+          // },
+          // {
+          //   id: 'project',
+          //   title: 'Project',
+          //   type: 'item',
+          //   url: '/dashboard/project'
+          // }
         ]
       },
-      {
-        id: 'page-layouts',
-        title: 'Page Layouts',
-        type: 'collapse',
-        icon: 'feather icon-layout',
-        children: [
-          {
-            id: 'vertical',
-            title: 'Vertical',
-            type: 'collapse',
-            children: [
-              {
-                id: 'v-static',
-                title: 'Static',
-                type: 'item',
-                url: '/layout/static',
-                target: true
-              },
-              {
-                id: 'v-fixed',
-                title: 'Fixed',
-                type: 'item',
-                url: '/layout/fixed',
-                target: true
-              },
-              {
-                id: 'v-nav-fixed',
-                title: 'Navbar Fixed',
-                type: 'item',
-                url: '/layout/nav-fixed',
-                target: true
-              },
-              {
-                id: 'v-collapse-menu',
-                title: 'Collapse Menu',
-                type: 'item',
-                url: '/layout/collapse-menu',
-                target: true
-              }
-            ]
-          },
-          {
-            id: 'horizontal',
-            title: 'Horizontal',
-            type: 'item',
-            url: '/layout/horizontal',
-            target: true
-          },
-          {
-            id: 'box-layout',
-            title: 'Box Layout',
-            type: 'item',
-            url: '/layout/box',
-            target: true
-          },
-          {
-            id: 'rtl',
-            title: 'RTL',
-            type: 'item',
-            url: '/layout/rtl',
-            target: true
-          },
-          {
-            id: 'light-layout',
-            title: 'Light Layout',
-            type: 'item',
-            url: '/layout/light',
-            target: true
-          },
-          {
-            id: 'dark-layout',
-            title: 'Dark Layout',
-            type: 'item',
-            url: '/layout/dark',
-            target: true,
-            badge: {
-              title: 'Hot',
-              type: 'label-danger'
-            }
-          },
-          {
-            id: 'icon-color',
-            title: 'Color Icon',
-            type: 'item',
-            url: '/layout/icon-color',
-            target: true
-          }
-        ]
-      },
-      {
-        id: 'widget',
-        title: 'Widget',
-        type: 'collapse',
-        icon: 'feather icon-layers',
-        children: [
-          {
-            id: 'statistic',
-            title: 'Statistic',
-            type: 'item',
-            url: '/widget/statistic'
-          },
-          {
-            id: 'data',
-            title: 'Data',
-            type: 'item',
-            url: '/widget/data'
-          },
-          {
-            id: 'table',
-            title: 'Table',
-            type: 'item',
-            url: '/widget/table'
-          },
-          {
-            id: 'user',
-            title: 'User',
-            type: 'item',
-            url: '/widget/user'
-          },
-          {
-            id: 'chart',
-            title: 'Chart',
-            type: 'item',
-            url: '/widget/chart'
-          }
-        ]
-      }
+      // {
+      //   id: 'page-layouts',
+      //   title: 'Page Layouts',
+      //   type: 'collapse',
+      //   icon: 'feather icon-layout',
+      //   children: [
+      //     {
+      //       id: 'vertical',
+      //       title: 'Vertical',
+      //       type: 'collapse',
+      //       children: [
+      //         {
+      //           id: 'v-static',
+      //           title: 'Static',
+      //           type: 'item',
+      //           url: '/layout/static',
+      //           target: true
+      //         },
+      //         {
+      //           id: 'v-fixed',
+      //           title: 'Fixed',
+      //           type: 'item',
+      //           url: '/layout/fixed',
+      //           target: true
+      //         },
+      //         {
+      //           id: 'v-nav-fixed',
+      //           title: 'Navbar Fixed',
+      //           type: 'item',
+      //           url: '/layout/nav-fixed',
+      //           target: true
+      //         },
+      //         {
+      //           id: 'v-collapse-menu',
+      //           title: 'Collapse Menu',
+      //           type: 'item',
+      //           url: '/layout/collapse-menu',
+      //           target: true
+      //         }
+      //       ]
+      //     },
+      //     {
+      //       id: 'horizontal',
+      //       title: 'Horizontal',
+      //       type: 'item',
+      //       url: '/layout/horizontal',
+      //       target: true
+      //     },
+      //     {
+      //       id: 'box-layout',
+      //       title: 'Box Layout',
+      //       type: 'item',
+      //       url: '/layout/box',
+      //       target: true
+      //     },
+      //     {
+      //       id: 'rtl',
+      //       title: 'RTL',
+      //       type: 'item',
+      //       url: '/layout/rtl',
+      //       target: true
+      //     },
+      //     {
+      //       id: 'light-layout',
+      //       title: 'Light Layout',
+      //       type: 'item',
+      //       url: '/layout/light',
+      //       target: true
+      //     },
+      //     {
+      //       id: 'dark-layout',
+      //       title: 'Dark Layout',
+      //       type: 'item',
+      //       url: '/layout/dark',
+      //       target: true,
+      //       badge: {
+      //         title: 'Hot',
+      //         type: 'label-danger'
+      //       }
+      //     },
+      //     {
+      //       id: 'icon-color',
+      //       title: 'Color Icon',
+      //       type: 'item',
+      //       url: '/layout/icon-color',
+      //       target: true
+      //     }
+      //   ]
+      // },
+      // {
+      //   id: 'widget',
+      //   title: 'Widget',
+      //   type: 'collapse',
+      //   icon: 'feather icon-layers',
+      //   children: [
+      //     {
+      //       id: 'statistic',
+      //       title: 'Statistic',
+      //       type: 'item',
+      //       url: '/widget/statistic'
+      //     },
+      //     {
+      //       id: 'data',
+      //       title: 'Data',
+      //       type: 'item',
+      //       url: '/widget/data'
+      //     },
+      //     {
+      //       id: 'table',
+      //       title: 'Table',
+      //       type: 'item',
+      //       url: '/widget/table'
+      //     },
+      //     {
+      //       id: 'user',
+      //       title: 'User',
+      //       type: 'item',
+      //       url: '/widget/user'
+      //     },
+      //     {
+      //       id: 'chart',
+      //       title: 'Chart',
+      //       type: 'item',
+      //       url: '/widget/chart'
+      //     }
+      //   ]
+      // }
       // {
       //   id: 'user',
       //   title: 'User',
@@ -306,1126 +306,1126 @@ const NavigationItems = [
       // }
     ]
   },
-  {
-    id: 'ui-element',
-    title: 'UI ELEMENT',
-    type: 'group',
-    icon: 'icon-ui',
-    children: [
-      {
-        id: 'basic',
-        title: 'Basic',
-        type: 'collapse',
-        icon: 'feather icon-box',
-        children: [
-          {
-            id: 'alert',
-            title: 'Alert',
-            type: 'item',
-            url: '/basic/alert'
-          },
-          {
-            id: 'button',
-            title: 'Button',
-            type: 'item',
-            url: '/basic/button'
-          },
-          {
-            id: 'badges',
-            title: 'Badges',
-            type: 'item',
-            url: '/basic/badges'
-          },
-          {
-            id: 'breadcrumb-pagination',
-            title: 'Breadcrumb & Pagination',
-            type: 'item',
-            url: '/basic/breadcrumb-paging'
-          },
-          {
-            id: 'cards',
-            title: 'Cards',
-            type: 'item',
-            url: '/basic/cards'
-          },
-          {
-            id: 'collapse',
-            title: 'Collapse',
-            type: 'item',
-            url: '/basic/collapse'
-          },
-          {
-            id: 'carousel',
-            title: 'Carousel',
-            type: 'item',
-            url: '/basic/carousel'
-          },
-          // {
-          //   id: 'grid-system',
-          //   title: 'Grid System',
-          //   type: 'item',
-          //   url: '/basic/grid-system'
-          // },
-          {
-            id: 'progress',
-            title: 'Progress',
-            type: 'item',
-            url: '/basic/progress'
-          },
-          {
-            id: 'modal',
-            title: 'Modal',
-            type: 'item',
-            url: '/basic/modal'
-          },
-          {
-            id: 'spinner',
-            title: 'Spinner',
-            type: 'item',
-            url: '/basic/spinner',
-            badge: {
-              title: 'New',
-              type: 'label-danger'
-            }
-          },
-          {
-            id: 'tabs-pills',
-            title: 'Tabs & Pills',
-            type: 'item',
-            url: '/basic/tabs-pills'
-          },
-          {
-            id: 'typography',
-            title: 'Typography',
-            type: 'item',
-            url: '/basic/typography'
-          },
-          {
-            id: 'tooltip-popovers',
-            title: 'Tooltip & Popovers',
-            type: 'item',
-            url: '/basic/tooltip-popovers'
-          },
-          {
-            id: 'tosts',
-            title: 'Toasts',
-            type: 'item',
-            url: '/basic/toasts',
-            badge: {
-              title: 'New',
-              type: 'label-danger'
-            }
-          },
-          {
-            id: 'other',
-            title: 'Other',
-            type: 'item',
-            url: '/basic/other',
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          }
-        ]
-      },
-      {
-        id: 'advance',
-        title: 'Advance',
-        type: 'collapse',
-        icon: 'feather icon-gitlab',
-        children: [
-          {
-            id: 'sweet-alert',
-            title: 'Sweet Alert',
-            type: 'item',
-            url: '/advance/alert'
-          },
-          {
-            id: 'datepicker',
-            title: 'Datepicker',
-            type: 'collapse',
-            icon: '',
-            children: [
-              {
-                id: 'day-demo',
-                title: 'Daypicker',
-                type: 'item',
-                url: '/advance/datepicker/day'
-              }
-            ]
-          },
-          {
-            id: 'task-board',
-            title: 'Task Board',
-            type: 'item',
-            url: '/advance/task-board'
-          },
-          {
-            id: 'light-box',
-            title: 'Light Box',
-            type: 'item',
-            url: '/advance/light-box'
-          },
-          {
-            id: 'modal',
-            title: 'Modal',
-            type: 'item',
-            url: '/advance/modal'
-          },
-          {
-            id: 'notification',
-            title: 'Notification',
-            type: 'item',
-            url: '/advance/notification'
-          },
-          /*{
-            id: 'nestable',
-            title: 'Nestable',
-            type: 'item',
-            url: '/advance/nestable'
-          },
-          {
-            id: 'p-notify',
-            title: 'P-Notify',
-            type: 'item',
-            url: '/advance/p-notify'
-          },*/
-          {
-            id: 'range-slider',
-            title: 'Range Slider',
-            type: 'item',
-            url: '/advance/range-slider'
-          },
-          {
-            id: 'tree-view',
-            title: 'Tree View',
-            type: 'item',
-            url: '/advance/tree-view'
-          },
-          {
-            id: 'rating',
-            title: 'Rating',
-            type: 'item',
-            url: '/advance/rating'
-          }
-          /*{
-            id: 'slider',
-            title: 'Slider',
-            type: 'item',
-            url: '/advance/slider'
-          },
-          {
-            id: 'syntax highlighter',
-            title: 'Syntax Highlighter',
-            type: 'item',
-            url: '/advance/syntax-highlighter'
-          },
-          {
-            id: 'tour',
-            title: 'Tour',
-            type: 'item',
-            url: '/advance/tour'
-          },
-          {
-            id: 'tree-view',
-            title: 'Tree View',
-            type: 'item',
-            url: '/advance/tree-view'
-          },
-          {
-            id: 'toolbar',
-            title: 'Toolbar',
-            type: 'item',
-            url: '/advance/toolbar'
-          }*/
-        ]
-      },
-      {
-        id: 'animation-page',
-        title: 'Animations',
-        type: 'item',
-        classes: 'nav-item',
-        url: '/animation',
-        icon: 'feather icon-aperture'
-      },
-      /*{
-        id: 'extra',
-        title: 'Extra',
-        type: 'collapse',
-        icon: 'feather icon-package',
-        children: [
-          {
-            id: 'session-timeout',
-            title: 'Session Timeout',
-            type: 'item',
-            url: '/extra/session-timeout'
-          },
-          {
-            id: 'session-idle-timeout',
-            title: 'Session Idle Timeout',
-            type: 'item',
-            url: '/extra/session-idle-timeout'
-          },
-          {
-            id: 'offline',
-            title: 'Offline',
-            type: 'item',
-            url: '/extra/offline'
-          }
-        ]
-      },*/
-      {
-        id: 'icons',
-        title: 'Icons',
-        type: 'collapse',
-        icon: 'feather icon-feather',
-        children: [
-          {
-            id: 'feather',
-            title: 'Feather',
-            type: 'item',
-            url: '/icons/feather',
-            badge: {
-              title: 'NEW',
-              type: 'label-danger'
-            }
-          }
-          // {
-          //   id: 'font-awesome-5',
-          //   title: 'Font-Awesome 5',
-          //   type: 'item',
-          //   url: '/icons/font-awesome-5',
-          //   badge: {
-          //     title: '1000+',
-          //     type: 'label-primary'
-          //   }
-          // },
-          // {
-          //   id: 'flag',
-          //   title: 'Flag',
-          //   type: 'item',
-          //   url: '/icons/flag'
-          // },
-          // {
-          //   id: 'material',
-          //   title: 'Material',
-          //   type: 'item',
-          //   url: '/icons/material'
-          // },
-          // {
-          //   id: 'simple-line',
-          //   title: 'Simple Line',
-          //   type: 'item',
-          //   url: '/icons/simple-line'
-          // },
-          // {
-          //   id: 'themify',
-          //   title: 'Themify',
-          //   type: 'item',
-          //   url: '/icons/themify'
-          // }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'forms',
-    title: 'Forms',
-    type: 'group',
-    icon: 'icon-group',
-    children: [
-      {
-        id: 'forms-element',
-        title: 'Forms',
-        type: 'collapse',
-        icon: 'feather icon-file-text',
-        children: [
-          {
-            id: 'form-baisc',
-            title: 'Form Basic',
-            type: 'item',
-            url: '/forms/basic'
-          },
-          {
-            id: 'form-elements',
-            title: 'Form Advance',
-            type: 'item',
-            url: '/forms/advance'
-          },
-          {
-            id: 'form-validation',
-            title: 'Form Validation',
-            type: 'item',
-            url: '/forms/validation'
-          },
-          {
-            id: 'form-masking',
-            title: 'Form Masking',
-            type: 'item',
-            url: '/forms/masking'
-          },
-          {
-            id: 'form-wizard',
-            title: 'Form Wizard',
-            type: 'item',
-            url: '/forms/wizard'
-          },
-          {
-            id: 'form-picker',
-            title: 'Form Picker',
-            type: 'item',
-            url: '/forms/picker'
-          },
-          {
-            id: 'form-select',
-            title: 'Form Select',
-            type: 'item',
-            url: '/forms/select'
-          }
-        ]
-      },
-      {
-        id: 'forms-plugin',
-        title: 'Form-plugin',
-        type: 'collapse',
-        icon: 'feather icon-file-text',
-        children: [
-          {
-            id: 'form-recaptcha',
-            title: 'Google ReCaptcha',
-            type: 'item',
-            url: '/plugin/recaptcha'
-          },
-          {
-            id: 'clipboard',
-            title: 'ClipBoard',
-            type: 'item',
-            url: '/plugin/clipboard'
-          },
-          {
-            id: 'switch',
-            title: 'Switch',
-            type: 'item',
-            url: '/plugin/switch'
-          },
-          {
-            id: 'typeahead',
-            title: 'Typeahead',
-            type: 'item',
-            url: '/plugin/typeahead'
-          }
-        ]
-      },
-      {
-        id: 'forms-layout',
-        title: 'Form-Layout',
-        type: 'collapse',
-        icon: 'feather icon-file-text',
-        children: [
-          {
-            id: 'frm-layout',
-            title: 'Layouts',
-            type: 'item',
-            url: '/layout/layout'
-          },
-          {
-            id: 'frm-multicolumn',
-            title: 'multicolumn',
-            type: 'item',
-            url: '/layout/multicolumn'
-          },
-          {
-            id: 'frm-actionbar',
-            title: 'Actionbars',
-            type: 'item',
-            url: '/layout/actionbars'
-          },
-          {
-            id: 'sticky-actionbar',
-            title: 'Sticky Actionbars',
-            type: 'item',
-            url: '/layout/stickyactionbar'
-          }
-        ]
-      },
-      {
-        id: 'images-cropper',
-        title: 'Images-Cropper',
-        type: 'collapse',
-        icon: 'feather icon-scissors',
-        children: [
-          {
-            id: 'img-cropper',
-            title: 'Img-Cropper',
-            type: 'item',
-            url: '/imagecropper/img-cropper'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'table',
-    title: 'Table',
-    type: 'group',
-    icon: 'icon-table',
-    children: [
-      {
-        id: 'tables',
-        title: 'Tables',
-        type: 'collapse',
-        icon: 'feather icon-server',
-        children: [
-          {
-            id: 'bootstrap',
-            title: 'Bootstrap',
-            type: 'item',
-            url: '/tables/bootstrap'
-          },
-          {
-            id: 'data-table',
-            title: 'Data Table',
-            type: 'item',
-            url: '/tables/datatable'
-          }
-          /*{
-            id: 'foo-table',
-            title: 'Foo Table',
-            type: 'item',
-            url: '/tables/foo-table'
-          }*/
-        ]
-      }
-    ]
-  },
-  {
-    id: 'chart-maps',
-    title: 'Chart & Maps',
-    type: 'group',
-    icon: 'icon-charts',
-    children: [
-      {
-        id: 'charts',
-        title: 'Charts',
-        type: 'collapse',
-        icon: 'feather icon-pie-chart',
-        children: [
-          // {
-          //   id: 'amchart',
-          //   title: 'AM Chart',
-          //   type: 'item',
-          //   url: '/charts/amchart'
-          // },
-          {
-            id: 'chart-js',
-            title: 'Chart JS',
-            type: 'item',
-            url: '/charts/chart-js'
-          },
-          {
-            id: 'e-chart',
-            title: 'E-Chart',
-            type: 'item',
-            url: '/charts/e-chart'
-          },
-          {
-            id: 'google',
-            title: 'Google',
-            type: 'item',
-            url: '/charts/google'
-          },
-          {
-            id: 'high-chart',
-            title: 'High Chart',
-            type: 'item',
-            url: '/charts/high-chart'
-          },
-          /*{
-            id: 'knob',
-            title: 'Knob',
-            type: 'item',
-            url: '/charts/knob'
-          },*/
-          {
-            id: 'morris',
-            title: 'Morris',
-            type: 'item',
-            url: '/charts/morris'
-          },
-          /*{
-            id: 'nvd3',
-            title: 'NVD3',
-            type: 'item',
-            url: '/charts/nvd3'
-          },*/
-          {
-            id: 'peity',
-            title: 'Peity',
-            type: 'item',
-            url: '/charts/peity'
-          },
-          {
-            id: 'radial',
-            title: 'Radial',
-            type: 'item',
-            url: '/charts/radial'
-          }
-        ]
-      },
-      {
-        id: 'maps',
-        title: 'Maps',
-        type: 'collapse',
-        icon: 'feather icon-map',
-        children: [
-          {
-            id: 'google',
-            title: 'Google',
-            type: 'item',
-            url: '/maps/google'
-          }
-          /*{
-            id: 'vector',
-            title: 'Vector',
-            type: 'item',
-            url: '/maps/vector'
-          },
-          {
-            id: 'gmap-search-api',
-            title: 'Gmap Search API',
-            type: 'item',
-            url: '/maps/gmap-search-api'
-          },
-          {
-            id: 'location',
-            title: 'Location',
-            type: 'item',
-            url: '/maps/location'
-          }*/
-        ]
-      },
-      {
-        id: 'landing-page',
-        title: 'Landing Page',
-        type: 'item',
-        icon: 'feather icon-navigation-2',
-        url: '/landing',
-        classes: 'nav-item',
-        target: true,
-        breadcrumbs: false
-      }
-    ]
-  },
-  {
-    id: 'pages',
-    title: 'Pages',
-    type: 'group',
-    icon: 'icon-pages',
-    children: [
-      {
-        id: 'auth',
-        title: 'Authentication',
-        type: 'collapse',
-        icon: 'feather icon-lock',
-        badge: {
-          title: 'New',
-          type: 'label-danger'
-        },
-        children: [
-          {
-            id: 'signup',
-            title: 'Sign up',
-            type: 'item',
-            url: '/auth/signup',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'signup',
-            title: 'Sign up v2',
-            type: 'item',
-            url: '/auth/signupv2',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'signup',
-            title: 'Sign up v3',
-            type: 'item',
-            url: '/auth/signupv3',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'signup',
-            title: 'Sign up v4',
-            type: 'item',
-            url: '/auth/signupv4',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'signup',
-            title: 'Sign up v5',
-            type: 'item',
-            url: '/auth/signupv5',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'signin',
-            title: 'Sign in',
-            type: 'item',
-            url: '/auth/signin',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'signin',
-            title: 'Sign in v2',
-            type: 'item',
-            url: '/auth/signinv2',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'signin',
-            title: 'Sign in v3',
-            type: 'item',
-            url: '/auth/signinv3',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'signin',
-            title: 'Sign in v4',
-            type: 'item',
-            url: '/auth/signinv4',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'signin',
-            title: 'Sign in v5',
-            type: 'item',
-            url: '/auth/signinv5',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'reset-password',
-            title: 'Reset Password',
-            type: 'item',
-            url: '/auth/reset-password',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'reset-password',
-            title: 'Reset Password v2',
-            type: 'item',
-            url: '/auth/reset-passwordv2',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'reset-password',
-            title: 'Reset Password v3',
-            type: 'item',
-            url: '/auth/reset-passwordv3',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'reset-password',
-            title: 'Reset Password v4',
-            type: 'item',
-            url: '/auth/reset-passwordv4',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'reset-password',
-            title: 'Reset Password v5',
-            type: 'item',
-            url: '/auth/reset-passwordv5',
-            target: true,
-            breadcrumbs: false,
-            badge: {
-              title: 'New',
-              type: 'label-primary'
-            }
-          },
-          {
-            id: 'change-password',
-            title: 'Change Password',
-            type: 'item',
-            url: '/auth/change-password',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'personal-information',
-            title: 'Personal Information',
-            type: 'item',
-            url: '/auth/personal-information',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'profile-settings',
-            title: 'Profile Settings',
-            type: 'item',
-            url: '/auth/profile-settings',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'map-form',
-            title: 'Map Form',
-            type: 'item',
-            url: '/auth/map-form',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'subscribe',
-            title: 'Subscribe',
-            type: 'item',
-            url: '/auth/subscribe',
-            target: true,
-            breadcrumbs: false
-          }
-        ]
-      },
-      {
-        id: 'maintenance',
-        title: 'Maintenance',
-        type: 'collapse',
-        icon: 'feather icon-sliders',
-        children: [
-          {
-            id: 'error',
-            title: 'Error',
-            type: 'item',
-            url: '/maintenance/error',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'coming-soon',
-            title: 'Coming Soon',
-            type: 'item',
-            url: '/maintenance/coming-soon',
-            target: true,
-            breadcrumbs: false
-          },
-          {
-            id: 'offline-ui',
-            title: 'Offline UI',
-            type: 'item',
-            url: '/maintenance/offline-ui',
-            target: true,
-            breadcrumbs: false
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'app',
-    title: 'App',
-    type: 'group',
-    icon: 'icon-app',
-    children: [
-      {
-        id: 'message',
-        title: 'Message',
-        type: 'item',
-        classes: 'nav-item',
-        url: '/message',
-        icon: 'icon-message-circle'
-      },
-      {
-        id: 'task',
-        title: 'Task',
-        type: 'collapse',
-        icon: 'feather icon-clipboard',
-        children: [
-          {
-            id: 'task-list',
-            title: 'List',
-            type: 'item',
-            url: '/task/list'
-          },
-          {
-            id: 'task-board',
-            title: 'Board',
-            type: 'item',
-            url: '/task/board'
-          },
-          {
-            id: 'task-detail',
-            title: 'Detail',
-            type: 'item',
-            url: '/task/detail'
-          }
-        ]
-      },
-      {
-        id: 'to-dos',
-        title: 'Todo',
-        type: 'collapse',
-        icon: 'feather icon-check-square',
-        children: [
-          {
-            id: 'todo',
-            title: 'Todo',
-            type: 'item',
-            url: '/todo/basic'
-          }
-          /*{
-            id: 'notes',
-            title: 'Notes',
-            type: 'item',
-            url: '/todo/notes'
-          }*/
-        ]
-      },
-      {
-        id: 'gallery',
-        title: 'Gallery',
-        type: 'collapse',
-        icon: 'feather icon-image',
-        children: [
-          {
-            id: 'grid',
-            title: 'Grid',
-            type: 'item',
-            url: '/gallery/grid'
-          },
-          // {
-          //   id: 'masonry',
-          //   title: 'Masonry',
-          //   type: 'item',
-          //   url: '/gallery/masonry'
-          // },
-          {
-            id: 'advance-gallery',
-            title: 'Advance',
-            type: 'item',
-            url: '/gallery/advance'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'extension',
-    title: 'Extension',
-    type: 'group',
-    icon: 'icon-extension',
-    children: [
-      {
-        id: 'editor',
-        title: 'Editor',
-        type: 'collapse',
-        icon: 'feather icon-file-plus',
-        children: [
-          /*{
-            id: 'ck-Editor',
-            title: 'CK-Editor',
-            type: 'collapse',
-            children: [
-              {
-                id: 'classic',
-                title: 'Classic',
-                type: 'item',
-                url: '/editor/ck-editor/classic'
-              },
-              {
-                id: 'balloon',
-                title: 'Balloon',
-                type: 'item',
-                url: '/editor/ck-editor/balloon'
-              },
-              {
-                id: 'inline',
-                title: 'Inline',
-                type: 'item',
-                url: '/editor/ck-editor/inline'
-              },
-              {
-                id: 'document',
-                title: 'Document',
-                type: 'item',
-                url: '/editor/ck-editor/document'
-              }
-            ]
-          },*/
-          {
-            id: 'tinymce-editor',
-            title: 'Tinymce Editor',
-            type: 'item',
-            url: '/editor/tinymce'
-          },
-          {
-            id: 'pell-wysiwyg',
-            title: 'Pell WYSIWYG',
-            type: 'item',
-            url: '/editor/wysiwyg'
-          }
-        ]
-      },
-      {
-        id: 'invoice',
-        title: 'Invoice',
-        type: 'collapse',
-        icon: 'feather icon-file-minus',
-        children: [
-          {
-            id: 'invoice-basic',
-            title: 'Invoice Basic',
-            type: 'item',
-            url: '/invoice/basic'
-          },
-          {
-            id: 'invoice-summary',
-            title: 'Invoice Summary',
-            type: 'item',
-            url: '/invoice/summary'
-          },
-          {
-            id: 'invoice-list',
-            title: 'Invoice List',
-            type: 'item',
-            url: '/invoice/list'
-          }
-        ]
-      },
-      // {
-      //   id: 'full-calendar',
-      //   title: 'Full Calendar',
-      //   type: 'item',
-      //   url: '/full-calendar',
-      //   classes: 'nav-item',
-      //   icon: 'feather icon-calendar'
-      // },
-      {
-        id: 'file-upload',
-        title: 'File Upload',
-        type: 'item',
-        url: '/file-upload',
-        classes: 'nav-item',
-        icon: 'feather icon-upload-cloud'
-      }
-    ]
-  },
-  {
-    id: 'other',
-    title: 'Other',
-    type: 'group',
-    icon: 'icon-other',
-    children: [
-      {
-        id: 'menu-level',
-        title: 'Menu Levels',
-        type: 'collapse',
-        icon: 'feather icon-menu',
-        children: [
-          {
-            id: 'menu-level-2.1',
-            title: 'Menu Level 2.1',
-            type: 'item',
-            url: 'javascript:',
-            external: true
-          },
-          {
-            id: 'menu-level-2.2',
-            title: 'Menu Level 2.2',
-            type: 'collapse',
-            children: [
-              {
-                id: 'menu-level-2.2.1',
-                title: 'Menu Level 2.2.1',
-                type: 'item',
-                url: 'javascript:',
-                external: true
-              },
-              {
-                id: 'menu-level-2.2.2',
-                title: 'Menu Level 2.2.2',
-                type: 'item',
-                url: 'javascript:',
-                external: true
-              }
-            ]
-          }
-        ]
-      },
-      {
-        id: 'disabled-menu',
-        title: 'Disabled Menu',
-        type: 'item',
-        url: 'javascript:',
-        classes: 'nav-item disabled',
-        icon: 'feather icon-power',
-        external: true
-      },
-      {
-        id: 'sample-page',
-        title: 'Sample Page',
-        type: 'item',
-        url: '/sample-page',
-        classes: 'nav-item',
-        icon: 'feather icon-sidebar'
-      }
-    ]
-  }
+  // {
+  //   id: 'ui-element',
+  //   title: 'UI ELEMENT',
+  //   type: 'group',
+  //   icon: 'icon-ui',
+  //   children: [
+  //     {
+  //       id: 'basic',
+  //       title: 'Basic',
+  //       type: 'collapse',
+  //       icon: 'feather icon-box',
+  //       children: [
+  //         {
+  //           id: 'alert',
+  //           title: 'Alert',
+  //           type: 'item',
+  //           url: '/basic/alert'
+  //         },
+  //         {
+  //           id: 'button',
+  //           title: 'Button',
+  //           type: 'item',
+  //           url: '/basic/button'
+  //         },
+  //         {
+  //           id: 'badges',
+  //           title: 'Badges',
+  //           type: 'item',
+  //           url: '/basic/badges'
+  //         },
+  //         {
+  //           id: 'breadcrumb-pagination',
+  //           title: 'Breadcrumb & Pagination',
+  //           type: 'item',
+  //           url: '/basic/breadcrumb-paging'
+  //         },
+  //         {
+  //           id: 'cards',
+  //           title: 'Cards',
+  //           type: 'item',
+  //           url: '/basic/cards'
+  //         },
+  //         {
+  //           id: 'collapse',
+  //           title: 'Collapse',
+  //           type: 'item',
+  //           url: '/basic/collapse'
+  //         },
+  //         {
+  //           id: 'carousel',
+  //           title: 'Carousel',
+  //           type: 'item',
+  //           url: '/basic/carousel'
+  //         },
+  //         // {
+  //         //   id: 'grid-system',
+  //         //   title: 'Grid System',
+  //         //   type: 'item',
+  //         //   url: '/basic/grid-system'
+  //         // },
+  //         {
+  //           id: 'progress',
+  //           title: 'Progress',
+  //           type: 'item',
+  //           url: '/basic/progress'
+  //         },
+  //         {
+  //           id: 'modal',
+  //           title: 'Modal',
+  //           type: 'item',
+  //           url: '/basic/modal'
+  //         },
+  //         {
+  //           id: 'spinner',
+  //           title: 'Spinner',
+  //           type: 'item',
+  //           url: '/basic/spinner',
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-danger'
+  //           }
+  //         },
+  //         {
+  //           id: 'tabs-pills',
+  //           title: 'Tabs & Pills',
+  //           type: 'item',
+  //           url: '/basic/tabs-pills'
+  //         },
+  //         {
+  //           id: 'typography',
+  //           title: 'Typography',
+  //           type: 'item',
+  //           url: '/basic/typography'
+  //         },
+  //         {
+  //           id: 'tooltip-popovers',
+  //           title: 'Tooltip & Popovers',
+  //           type: 'item',
+  //           url: '/basic/tooltip-popovers'
+  //         },
+  //         {
+  //           id: 'tosts',
+  //           title: 'Toasts',
+  //           type: 'item',
+  //           url: '/basic/toasts',
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-danger'
+  //           }
+  //         },
+  //         {
+  //           id: 'other',
+  //           title: 'Other',
+  //           type: 'item',
+  //           url: '/basic/other',
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'advance',
+  //       title: 'Advance',
+  //       type: 'collapse',
+  //       icon: 'feather icon-gitlab',
+  //       children: [
+  //         {
+  //           id: 'sweet-alert',
+  //           title: 'Sweet Alert',
+  //           type: 'item',
+  //           url: '/advance/alert'
+  //         },
+  //         {
+  //           id: 'datepicker',
+  //           title: 'Datepicker',
+  //           type: 'collapse',
+  //           icon: '',
+  //           children: [
+  //             {
+  //               id: 'day-demo',
+  //               title: 'Daypicker',
+  //               type: 'item',
+  //               url: '/advance/datepicker/day'
+  //             }
+  //           ]
+  //         },
+  //         {
+  //           id: 'task-board',
+  //           title: 'Task Board',
+  //           type: 'item',
+  //           url: '/advance/task-board'
+  //         },
+  //         {
+  //           id: 'light-box',
+  //           title: 'Light Box',
+  //           type: 'item',
+  //           url: '/advance/light-box'
+  //         },
+  //         {
+  //           id: 'modal',
+  //           title: 'Modal',
+  //           type: 'item',
+  //           url: '/advance/modal'
+  //         },
+  //         {
+  //           id: 'notification',
+  //           title: 'Notification',
+  //           type: 'item',
+  //           url: '/advance/notification'
+  //         },
+  //         /*{
+  //           id: 'nestable',
+  //           title: 'Nestable',
+  //           type: 'item',
+  //           url: '/advance/nestable'
+  //         },
+  //         {
+  //           id: 'p-notify',
+  //           title: 'P-Notify',
+  //           type: 'item',
+  //           url: '/advance/p-notify'
+  //         },*/
+  //         {
+  //           id: 'range-slider',
+  //           title: 'Range Slider',
+  //           type: 'item',
+  //           url: '/advance/range-slider'
+  //         },
+  //         {
+  //           id: 'tree-view',
+  //           title: 'Tree View',
+  //           type: 'item',
+  //           url: '/advance/tree-view'
+  //         },
+  //         {
+  //           id: 'rating',
+  //           title: 'Rating',
+  //           type: 'item',
+  //           url: '/advance/rating'
+  //         }
+  //         /*{
+  //           id: 'slider',
+  //           title: 'Slider',
+  //           type: 'item',
+  //           url: '/advance/slider'
+  //         },
+  //         {
+  //           id: 'syntax highlighter',
+  //           title: 'Syntax Highlighter',
+  //           type: 'item',
+  //           url: '/advance/syntax-highlighter'
+  //         },
+  //         {
+  //           id: 'tour',
+  //           title: 'Tour',
+  //           type: 'item',
+  //           url: '/advance/tour'
+  //         },
+  //         {
+  //           id: 'tree-view',
+  //           title: 'Tree View',
+  //           type: 'item',
+  //           url: '/advance/tree-view'
+  //         },
+  //         {
+  //           id: 'toolbar',
+  //           title: 'Toolbar',
+  //           type: 'item',
+  //           url: '/advance/toolbar'
+  //         }*/
+  //       ]
+  //     },
+  //     {
+  //       id: 'animation-page',
+  //       title: 'Animations',
+  //       type: 'item',
+  //       classes: 'nav-item',
+  //       url: '/animation',
+  //       icon: 'feather icon-aperture'
+  //     },
+  //     /*{
+  //       id: 'extra',
+  //       title: 'Extra',
+  //       type: 'collapse',
+  //       icon: 'feather icon-package',
+  //       children: [
+  //         {
+  //           id: 'session-timeout',
+  //           title: 'Session Timeout',
+  //           type: 'item',
+  //           url: '/extra/session-timeout'
+  //         },
+  //         {
+  //           id: 'session-idle-timeout',
+  //           title: 'Session Idle Timeout',
+  //           type: 'item',
+  //           url: '/extra/session-idle-timeout'
+  //         },
+  //         {
+  //           id: 'offline',
+  //           title: 'Offline',
+  //           type: 'item',
+  //           url: '/extra/offline'
+  //         }
+  //       ]
+  //     },*/
+  //     {
+  //       id: 'icons',
+  //       title: 'Icons',
+  //       type: 'collapse',
+  //       icon: 'feather icon-feather',
+  //       children: [
+  //         {
+  //           id: 'feather',
+  //           title: 'Feather',
+  //           type: 'item',
+  //           url: '/icons/feather',
+  //           badge: {
+  //             title: 'NEW',
+  //             type: 'label-danger'
+  //           }
+  //         }
+  //         // {
+  //         //   id: 'font-awesome-5',
+  //         //   title: 'Font-Awesome 5',
+  //         //   type: 'item',
+  //         //   url: '/icons/font-awesome-5',
+  //         //   badge: {
+  //         //     title: '1000+',
+  //         //     type: 'label-primary'
+  //         //   }
+  //         // },
+  //         // {
+  //         //   id: 'flag',
+  //         //   title: 'Flag',
+  //         //   type: 'item',
+  //         //   url: '/icons/flag'
+  //         // },
+  //         // {
+  //         //   id: 'material',
+  //         //   title: 'Material',
+  //         //   type: 'item',
+  //         //   url: '/icons/material'
+  //         // },
+  //         // {
+  //         //   id: 'simple-line',
+  //         //   title: 'Simple Line',
+  //         //   type: 'item',
+  //         //   url: '/icons/simple-line'
+  //         // },
+  //         // {
+  //         //   id: 'themify',
+  //         //   title: 'Themify',
+  //         //   type: 'item',
+  //         //   url: '/icons/themify'
+  //         // }
+  //       ]
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 'forms',
+  //   title: 'Forms',
+  //   type: 'group',
+  //   icon: 'icon-group',
+  //   children: [
+  //     {
+  //       id: 'forms-element',
+  //       title: 'Forms',
+  //       type: 'collapse',
+  //       icon: 'feather icon-file-text',
+  //       children: [
+  //         {
+  //           id: 'form-baisc',
+  //           title: 'Form Basic',
+  //           type: 'item',
+  //           url: '/forms/basic'
+  //         },
+  //         {
+  //           id: 'form-elements',
+  //           title: 'Form Advance',
+  //           type: 'item',
+  //           url: '/forms/advance'
+  //         },
+  //         {
+  //           id: 'form-validation',
+  //           title: 'Form Validation',
+  //           type: 'item',
+  //           url: '/forms/validation'
+  //         },
+  //         {
+  //           id: 'form-masking',
+  //           title: 'Form Masking',
+  //           type: 'item',
+  //           url: '/forms/masking'
+  //         },
+  //         {
+  //           id: 'form-wizard',
+  //           title: 'Form Wizard',
+  //           type: 'item',
+  //           url: '/forms/wizard'
+  //         },
+  //         {
+  //           id: 'form-picker',
+  //           title: 'Form Picker',
+  //           type: 'item',
+  //           url: '/forms/picker'
+  //         },
+  //         {
+  //           id: 'form-select',
+  //           title: 'Form Select',
+  //           type: 'item',
+  //           url: '/forms/select'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'forms-plugin',
+  //       title: 'Form-plugin',
+  //       type: 'collapse',
+  //       icon: 'feather icon-file-text',
+  //       children: [
+  //         {
+  //           id: 'form-recaptcha',
+  //           title: 'Google ReCaptcha',
+  //           type: 'item',
+  //           url: '/plugin/recaptcha'
+  //         },
+  //         {
+  //           id: 'clipboard',
+  //           title: 'ClipBoard',
+  //           type: 'item',
+  //           url: '/plugin/clipboard'
+  //         },
+  //         {
+  //           id: 'switch',
+  //           title: 'Switch',
+  //           type: 'item',
+  //           url: '/plugin/switch'
+  //         },
+  //         {
+  //           id: 'typeahead',
+  //           title: 'Typeahead',
+  //           type: 'item',
+  //           url: '/plugin/typeahead'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'forms-layout',
+  //       title: 'Form-Layout',
+  //       type: 'collapse',
+  //       icon: 'feather icon-file-text',
+  //       children: [
+  //         {
+  //           id: 'frm-layout',
+  //           title: 'Layouts',
+  //           type: 'item',
+  //           url: '/layout/layout'
+  //         },
+  //         {
+  //           id: 'frm-multicolumn',
+  //           title: 'multicolumn',
+  //           type: 'item',
+  //           url: '/layout/multicolumn'
+  //         },
+  //         {
+  //           id: 'frm-actionbar',
+  //           title: 'Actionbars',
+  //           type: 'item',
+  //           url: '/layout/actionbars'
+  //         },
+  //         {
+  //           id: 'sticky-actionbar',
+  //           title: 'Sticky Actionbars',
+  //           type: 'item',
+  //           url: '/layout/stickyactionbar'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'images-cropper',
+  //       title: 'Images-Cropper',
+  //       type: 'collapse',
+  //       icon: 'feather icon-scissors',
+  //       children: [
+  //         {
+  //           id: 'img-cropper',
+  //           title: 'Img-Cropper',
+  //           type: 'item',
+  //           url: '/imagecropper/img-cropper'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 'table',
+  //   title: 'Table',
+  //   type: 'group',
+  //   icon: 'icon-table',
+  //   children: [
+  //     {
+  //       id: 'tables',
+  //       title: 'Tables',
+  //       type: 'collapse',
+  //       icon: 'feather icon-server',
+  //       children: [
+  //         {
+  //           id: 'bootstrap',
+  //           title: 'Bootstrap',
+  //           type: 'item',
+  //           url: '/tables/bootstrap'
+  //         },
+  //         {
+  //           id: 'data-table',
+  //           title: 'Data Table',
+  //           type: 'item',
+  //           url: '/tables/datatable'
+  //         }
+  //         /*{
+  //           id: 'foo-table',
+  //           title: 'Foo Table',
+  //           type: 'item',
+  //           url: '/tables/foo-table'
+  //         }*/
+  //       ]
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 'chart-maps',
+  //   title: 'Chart & Maps',
+  //   type: 'group',
+  //   icon: 'icon-charts',
+  //   children: [
+  //     {
+  //       id: 'charts',
+  //       title: 'Charts',
+  //       type: 'collapse',
+  //       icon: 'feather icon-pie-chart',
+  //       children: [
+  //         // {
+  //         //   id: 'amchart',
+  //         //   title: 'AM Chart',
+  //         //   type: 'item',
+  //         //   url: '/charts/amchart'
+  //         // },
+  //         {
+  //           id: 'chart-js',
+  //           title: 'Chart JS',
+  //           type: 'item',
+  //           url: '/charts/chart-js'
+  //         },
+  //         {
+  //           id: 'e-chart',
+  //           title: 'E-Chart',
+  //           type: 'item',
+  //           url: '/charts/e-chart'
+  //         },
+  //         {
+  //           id: 'google',
+  //           title: 'Google',
+  //           type: 'item',
+  //           url: '/charts/google'
+  //         },
+  //         {
+  //           id: 'high-chart',
+  //           title: 'High Chart',
+  //           type: 'item',
+  //           url: '/charts/high-chart'
+  //         },
+  //         /*{
+  //           id: 'knob',
+  //           title: 'Knob',
+  //           type: 'item',
+  //           url: '/charts/knob'
+  //         },*/
+  //         {
+  //           id: 'morris',
+  //           title: 'Morris',
+  //           type: 'item',
+  //           url: '/charts/morris'
+  //         },
+  //         /*{
+  //           id: 'nvd3',
+  //           title: 'NVD3',
+  //           type: 'item',
+  //           url: '/charts/nvd3'
+  //         },*/
+  //         {
+  //           id: 'peity',
+  //           title: 'Peity',
+  //           type: 'item',
+  //           url: '/charts/peity'
+  //         },
+  //         {
+  //           id: 'radial',
+  //           title: 'Radial',
+  //           type: 'item',
+  //           url: '/charts/radial'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'maps',
+  //       title: 'Maps',
+  //       type: 'collapse',
+  //       icon: 'feather icon-map',
+  //       children: [
+  //         {
+  //           id: 'google',
+  //           title: 'Google',
+  //           type: 'item',
+  //           url: '/maps/google'
+  //         }
+  //         /*{
+  //           id: 'vector',
+  //           title: 'Vector',
+  //           type: 'item',
+  //           url: '/maps/vector'
+  //         },
+  //         {
+  //           id: 'gmap-search-api',
+  //           title: 'Gmap Search API',
+  //           type: 'item',
+  //           url: '/maps/gmap-search-api'
+  //         },
+  //         {
+  //           id: 'location',
+  //           title: 'Location',
+  //           type: 'item',
+  //           url: '/maps/location'
+  //         }*/
+  //       ]
+  //     },
+  //     {
+  //       id: 'landing-page',
+  //       title: 'Landing Page',
+  //       type: 'item',
+  //       icon: 'feather icon-navigation-2',
+  //       url: '/landing',
+  //       classes: 'nav-item',
+  //       target: true,
+  //       breadcrumbs: false
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 'pages',
+  //   title: 'Pages',
+  //   type: 'group',
+  //   icon: 'icon-pages',
+  //   children: [
+  //     {
+  //       id: 'auth',
+  //       title: 'Authentication',
+  //       type: 'collapse',
+  //       icon: 'feather icon-lock',
+  //       badge: {
+  //         title: 'New',
+  //         type: 'label-danger'
+  //       },
+  //       children: [
+  //         {
+  //           id: 'signup',
+  //           title: 'Sign up',
+  //           type: 'item',
+  //           url: '/auth/signup',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'signup',
+  //           title: 'Sign up v2',
+  //           type: 'item',
+  //           url: '/auth/signupv2',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'signup',
+  //           title: 'Sign up v3',
+  //           type: 'item',
+  //           url: '/auth/signupv3',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'signup',
+  //           title: 'Sign up v4',
+  //           type: 'item',
+  //           url: '/auth/signupv4',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'signup',
+  //           title: 'Sign up v5',
+  //           type: 'item',
+  //           url: '/auth/signupv5',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'signin',
+  //           title: 'Sign in',
+  //           type: 'item',
+  //           url: '/auth/signin',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'signin',
+  //           title: 'Sign in v2',
+  //           type: 'item',
+  //           url: '/auth/signinv2',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'signin',
+  //           title: 'Sign in v3',
+  //           type: 'item',
+  //           url: '/auth/signinv3',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'signin',
+  //           title: 'Sign in v4',
+  //           type: 'item',
+  //           url: '/auth/signinv4',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'signin',
+  //           title: 'Sign in v5',
+  //           type: 'item',
+  //           url: '/auth/signinv5',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'reset-password',
+  //           title: 'Reset Password',
+  //           type: 'item',
+  //           url: '/auth/reset-password',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'reset-password',
+  //           title: 'Reset Password v2',
+  //           type: 'item',
+  //           url: '/auth/reset-passwordv2',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'reset-password',
+  //           title: 'Reset Password v3',
+  //           type: 'item',
+  //           url: '/auth/reset-passwordv3',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'reset-password',
+  //           title: 'Reset Password v4',
+  //           type: 'item',
+  //           url: '/auth/reset-passwordv4',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'reset-password',
+  //           title: 'Reset Password v5',
+  //           type: 'item',
+  //           url: '/auth/reset-passwordv5',
+  //           target: true,
+  //           breadcrumbs: false,
+  //           badge: {
+  //             title: 'New',
+  //             type: 'label-primary'
+  //           }
+  //         },
+  //         {
+  //           id: 'change-password',
+  //           title: 'Change Password',
+  //           type: 'item',
+  //           url: '/auth/change-password',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'personal-information',
+  //           title: 'Personal Information',
+  //           type: 'item',
+  //           url: '/auth/personal-information',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'profile-settings',
+  //           title: 'Profile Settings',
+  //           type: 'item',
+  //           url: '/auth/profile-settings',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'map-form',
+  //           title: 'Map Form',
+  //           type: 'item',
+  //           url: '/auth/map-form',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'subscribe',
+  //           title: 'Subscribe',
+  //           type: 'item',
+  //           url: '/auth/subscribe',
+  //           target: true,
+  //           breadcrumbs: false
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'maintenance',
+  //       title: 'Maintenance',
+  //       type: 'collapse',
+  //       icon: 'feather icon-sliders',
+  //       children: [
+  //         {
+  //           id: 'error',
+  //           title: 'Error',
+  //           type: 'item',
+  //           url: '/maintenance/error',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'coming-soon',
+  //           title: 'Coming Soon',
+  //           type: 'item',
+  //           url: '/maintenance/coming-soon',
+  //           target: true,
+  //           breadcrumbs: false
+  //         },
+  //         {
+  //           id: 'offline-ui',
+  //           title: 'Offline UI',
+  //           type: 'item',
+  //           url: '/maintenance/offline-ui',
+  //           target: true,
+  //           breadcrumbs: false
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 'app',
+  //   title: 'App',
+  //   type: 'group',
+  //   icon: 'icon-app',
+  //   children: [
+  //     {
+  //       id: 'message',
+  //       title: 'Message',
+  //       type: 'item',
+  //       classes: 'nav-item',
+  //       url: '/message',
+  //       icon: 'icon-message-circle'
+  //     },
+  //     {
+  //       id: 'task',
+  //       title: 'Task',
+  //       type: 'collapse',
+  //       icon: 'feather icon-clipboard',
+  //       children: [
+  //         {
+  //           id: 'task-list',
+  //           title: 'List',
+  //           type: 'item',
+  //           url: '/task/list'
+  //         },
+  //         {
+  //           id: 'task-board',
+  //           title: 'Board',
+  //           type: 'item',
+  //           url: '/task/board'
+  //         },
+  //         {
+  //           id: 'task-detail',
+  //           title: 'Detail',
+  //           type: 'item',
+  //           url: '/task/detail'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'to-dos',
+  //       title: 'Todo',
+  //       type: 'collapse',
+  //       icon: 'feather icon-check-square',
+  //       children: [
+  //         {
+  //           id: 'todo',
+  //           title: 'Todo',
+  //           type: 'item',
+  //           url: '/todo/basic'
+  //         }
+  //         /*{
+  //           id: 'notes',
+  //           title: 'Notes',
+  //           type: 'item',
+  //           url: '/todo/notes'
+  //         }*/
+  //       ]
+  //     },
+  //     {
+  //       id: 'gallery',
+  //       title: 'Gallery',
+  //       type: 'collapse',
+  //       icon: 'feather icon-image',
+  //       children: [
+  //         {
+  //           id: 'grid',
+  //           title: 'Grid',
+  //           type: 'item',
+  //           url: '/gallery/grid'
+  //         },
+  //         // {
+  //         //   id: 'masonry',
+  //         //   title: 'Masonry',
+  //         //   type: 'item',
+  //         //   url: '/gallery/masonry'
+  //         // },
+  //         {
+  //           id: 'advance-gallery',
+  //           title: 'Advance',
+  //           type: 'item',
+  //           url: '/gallery/advance'
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 'extension',
+  //   title: 'Extension',
+  //   type: 'group',
+  //   icon: 'icon-extension',
+  //   children: [
+  //     {
+  //       id: 'editor',
+  //       title: 'Editor',
+  //       type: 'collapse',
+  //       icon: 'feather icon-file-plus',
+  //       children: [
+  //         /*{
+  //           id: 'ck-Editor',
+  //           title: 'CK-Editor',
+  //           type: 'collapse',
+  //           children: [
+  //             {
+  //               id: 'classic',
+  //               title: 'Classic',
+  //               type: 'item',
+  //               url: '/editor/ck-editor/classic'
+  //             },
+  //             {
+  //               id: 'balloon',
+  //               title: 'Balloon',
+  //               type: 'item',
+  //               url: '/editor/ck-editor/balloon'
+  //             },
+  //             {
+  //               id: 'inline',
+  //               title: 'Inline',
+  //               type: 'item',
+  //               url: '/editor/ck-editor/inline'
+  //             },
+  //             {
+  //               id: 'document',
+  //               title: 'Document',
+  //               type: 'item',
+  //               url: '/editor/ck-editor/document'
+  //             }
+  //           ]
+  //         },*/
+  //         {
+  //           id: 'tinymce-editor',
+  //           title: 'Tinymce Editor',
+  //           type: 'item',
+  //           url: '/editor/tinymce'
+  //         },
+  //         {
+  //           id: 'pell-wysiwyg',
+  //           title: 'Pell WYSIWYG',
+  //           type: 'item',
+  //           url: '/editor/wysiwyg'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'invoice',
+  //       title: 'Invoice',
+  //       type: 'collapse',
+  //       icon: 'feather icon-file-minus',
+  //       children: [
+  //         {
+  //           id: 'invoice-basic',
+  //           title: 'Invoice Basic',
+  //           type: 'item',
+  //           url: '/invoice/basic'
+  //         },
+  //         {
+  //           id: 'invoice-summary',
+  //           title: 'Invoice Summary',
+  //           type: 'item',
+  //           url: '/invoice/summary'
+  //         },
+  //         {
+  //           id: 'invoice-list',
+  //           title: 'Invoice List',
+  //           type: 'item',
+  //           url: '/invoice/list'
+  //         }
+  //       ]
+  //     },
+  //     // {
+  //     //   id: 'full-calendar',
+  //     //   title: 'Full Calendar',
+  //     //   type: 'item',
+  //     //   url: '/full-calendar',
+  //     //   classes: 'nav-item',
+  //     //   icon: 'feather icon-calendar'
+  //     // },
+  //     {
+  //       id: 'file-upload',
+  //       title: 'File Upload',
+  //       type: 'item',
+  //       url: '/file-upload',
+  //       classes: 'nav-item',
+  //       icon: 'feather icon-upload-cloud'
+  //     }
+  //   ]
+  // },
+  // {
+  //   id: 'other',
+  //   title: 'Other',
+  //   type: 'group',
+  //   icon: 'icon-other',
+  //   children: [
+  //     {
+  //       id: 'menu-level',
+  //       title: 'Menu Levels',
+  //       type: 'collapse',
+  //       icon: 'feather icon-menu',
+  //       children: [
+  //         {
+  //           id: 'menu-level-2.1',
+  //           title: 'Menu Level 2.1',
+  //           type: 'item',
+  //           url: 'javascript:',
+  //           external: true
+  //         },
+  //         {
+  //           id: 'menu-level-2.2',
+  //           title: 'Menu Level 2.2',
+  //           type: 'collapse',
+  //           children: [
+  //             {
+  //               id: 'menu-level-2.2.1',
+  //               title: 'Menu Level 2.2.1',
+  //               type: 'item',
+  //               url: 'javascript:',
+  //               external: true
+  //             },
+  //             {
+  //               id: 'menu-level-2.2.2',
+  //               title: 'Menu Level 2.2.2',
+  //               type: 'item',
+  //               url: 'javascript:',
+  //               external: true
+  //             }
+  //           ]
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       id: 'disabled-menu',
+  //       title: 'Disabled Menu',
+  //       type: 'item',
+  //       url: 'javascript:',
+  //       classes: 'nav-item disabled',
+  //       icon: 'feather icon-power',
+  //       external: true
+  //     },
+  //     {
+  //       id: 'sample-page',
+  //       title: 'Sample Page',
+  //       type: 'item',
+  //       url: '/sample-page',
+  //       classes: 'nav-item',
+  //       icon: 'feather icon-sidebar'
+  //     }
+  //   ]
+  // }
   // {
   //   id: 'support',
   //   title: 'Support',
