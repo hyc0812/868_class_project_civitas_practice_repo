@@ -1,44 +1,13 @@
 
 
 
-  <div [hidden]="!submitted">
-    <h2>You submitted the following:</h2>
-
-    <div class="row">
-      <div class="col-xs-3"><h4>Name</h4></div>
-      <div class="col-xs-9">{{ model.name }}</div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-3"><h4>Title</h4></div>
-      <div class="col-xs-9">{{ model.title }}</div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-3"><h4>Tag</h4></div>
-      <div class="col-xs-9">{{ model.tags }}</div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-3"><h4>postOn</h4></div>
-      <div class="col-xs-9">{{ model.postOn }}</div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-3"><h4>Content</h4></div>
-      <div class="col-xs-9">{{ model.content }}</div>
-    </div>
-    <br>
-    <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
-  </div>
-
 
 <div class="col-sm-10">
   <app-card cardTitle="Please, create your story..." [options]="false">
     <div class="mb-5">
 
       <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="name"><h5>Name </h5></label>
           <input type="text" class="form-control" id="name"
                  required
@@ -48,7 +17,7 @@
                class="alert alert-danger">
             Name is required
           </div>
-        </div>
+        </div> -->
   
         <div class="form-group">
           <label for="title"><h5>Title</h5></label>
@@ -81,7 +50,7 @@
         </tag-input>
       </div>
   
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="postOn"><h5>Where to post:</h5></label>
           <select class="form-control" id="postOn"
                   required
@@ -89,7 +58,7 @@
                   #postOn="ngModel" >
             <option *ngFor="let place of postOns" [value]="place">{{place}}</option>
           </select>
-        </div>
+        </div> -->
   
   
         <div class="form-group">
@@ -230,3 +199,38 @@
   >
     Success
   </button> -->
+
+
+
+
+
+  <!-- <div [hidden]="!submitted">
+    <h2>You submitted the following:</h2>
+
+    <div class="row">
+      <div class="col-xs-3"><h4>Name</h4></div>
+      <div class="col-xs-9">{{ model.name }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3"><h4>Title</h4></div>
+      <div class="col-xs-9">{{ model.title }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3"><h4>Tag</h4></div>
+      <div class="col-xs-9">{{ model.tags }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3"><h4>postOn</h4></div>
+      <div class="col-xs-9">{{ model.postOn }}</div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3"><h4>Content</h4></div>
+      <div class="col-xs-9">{{ model.content }}</div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-primary" (click)="submitted=false">Edit</button>
+  </div> -->
