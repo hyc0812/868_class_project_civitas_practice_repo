@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 import { SignUpUser } from './signUpUserInterface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth-signup-v5',
@@ -10,7 +12,7 @@ import { SignUpUser } from './signUpUserInterface';
 
 export class AuthSignupV5Component implements OnInit {
 
-  newUser = new SignUpUser(12, '', '', '', '', false );
+  newUser = new SignUpUser(12, 'Prakhyat@gmail1.com', 'Prakhyat', 'Jade', '123456789012', false );
 
   submitted = false;
 
@@ -19,7 +21,23 @@ export class AuthSignupV5Component implements OnInit {
     console.log(this.newUser)
   }
 
-  constructor() {}
+  signUpAlert() {
+    Swal.fire({
+      title: 'Congrates!',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1500
+    }).then((isOkay) => {
+      if (isOkay){
+        this.onSubmit;
+        this.router.navigate(['dashboard/default']);
+      }
+    }
+    );
+  }
+
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 }

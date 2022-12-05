@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import  {Post}  from './post';
 import { UntypedFormControl } from '@angular/forms';
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
 
 
 
@@ -35,6 +36,7 @@ export class CreatePostComponent implements OnInit {
     }).then((isOkay) => {
       if (isOkay){
         this.onSubmit;
+        this.router.navigate(['dashboard/blogs']);
       }
     }
     );
@@ -103,7 +105,7 @@ export class CreatePostComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {}
 

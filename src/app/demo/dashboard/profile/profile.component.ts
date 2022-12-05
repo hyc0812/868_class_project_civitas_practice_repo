@@ -17,7 +17,7 @@ export class ProfileComponent implements OnInit {
     files: this.filesControl
   });
 
-  userProfile = new UserProfile(42, 'Prakhyat Khati', 'prakhyat.khati09@gmail.com', 'prakhyat', '', 'IoT learner and cloud developer. Quite keen on BlockChain...');
+  userProfile = new UserProfile(42, 'Prakhyat Jade', 'prakhyat.khati09@gmail.com', 'prakhyat', '12345678901234','', 'IoT learner and cloud developer. Quite keen on BlockChain...');
 
   submitted = false;
 

@@ -1,6 +1,13 @@
 <div class="row">
   <div class="col-sm-12">
+    <div class="position-absolute top-0 end-0"> 
+        <a type="button" href="auth/signinv5" class="btn btn-light" ngbTooltip="Log In">Log In</a>
+        <a type="button" href="auth/signupv5" class="btn btn-secondary" ngbTooltip="Create account">Create account</a>
+      </div>
+      <hr>
     <div class="card bg-dark text-white">
+      
+      
       <img class="card-img" src="assets/images/slider/home_page.jpeg" alt="Card image" />
       <div class="card-img-overlay">
         <h1 class="card-title text-black">You are welcome to Explore</h1>
@@ -38,7 +45,7 @@
           <div>
             <p>{{topics[0].abridgedContent}}</p>
           </div>
-          <a routerLink="/blogs/detail/{{topics[0].id}}">
+          <a href="dashboard/blogs/show-blog/1">
             <span class="badge">{{topics[0].tag}}</span>
           </a>
         </figcaption>
@@ -52,7 +59,7 @@
           <div>
             <p>{{topics[1].abridgedContent}}</p>
           </div>
-          <a routerLink="/blogs/detail/{{topics[1].id}}">
+          <a href="dashboard/blogs/show-blog/6">
             <span class="badge">{{topics[1].tag}}</span>
           </a>
         </figcaption>
@@ -66,7 +73,7 @@
           <div>
             <p>{{topics[2].abridgedContent}}</p>
           </div>
-          <a routerLink="/blogs/detail/{{topics[2].id}}">
+          <a href="dashboard/blogs/show-blog/3">
             <span class="badge">{{topics[2].tag}}</span>
           </a>
         </figcaption>

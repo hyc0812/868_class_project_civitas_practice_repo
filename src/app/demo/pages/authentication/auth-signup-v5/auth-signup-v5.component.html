@@ -89,7 +89,7 @@
                 type="checkbox" 
                 name="checkbox-fill-2" 
                 id="checkbox-fill-2" 
-                required
+                
                 [(ngModel)]="newUser.isSubscribe"
                 />
               <label for="checkbox-fill-2" class="cr">Send me the <a href="#!"> Newsletter</a> weekly.</label>
@@ -97,7 +97,11 @@
           </div>
 
 
-          <button type="submit" class="btn btn-primary shadow-2 mb-4">Sign up</button>
+          <button 
+            type="submit" 
+            class="btn btn-primary shadow-2 mb-4"
+            [disabled]="!signUpForm.form.valid" (click)="signUpAlert()"
+            >Sign up</button>
           
         </form>
 

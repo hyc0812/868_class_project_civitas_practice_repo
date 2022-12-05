@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 import { SignInUser } from './SignInUserInterface';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth-signin-v5',
@@ -8,7 +10,7 @@ import { SignInUser } from './SignInUserInterface';
 })
 export class AuthSigninV5Component implements OnInit {
 
-  signInUser = new SignInUser(12, '', '', false);
+  signInUser = new SignInUser(12, 'Prakhyat@gmail1.com', '1234567890', false);
 
   submitted = false;
 
@@ -17,7 +19,22 @@ export class AuthSigninV5Component implements OnInit {
     console.log(this.signInUser)
   }
 
-  constructor() {}
+  signUpAlert() {
+    Swal.fire({
+      title: 'Welcome!',
+      icon: 'success',
+      showConfirmButton: false,
+      timer: 1500
+    }).then((isOkay) => {
+      if (isOkay){
+        this.onSubmit;
+        this.router.navigate(['dashboard/profile']);
+      }
+    }
+    );
+  }
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
 }
