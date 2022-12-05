@@ -1,1 +1,148 @@
-<p>help works!</p>
+<app-card cardTitle="Civitas -- A community engagement website" [options]="false">
+    <aw-wizard #wizard class="arc-wizard" navBarLayout="large-filled-symbols">
+      <aw-wizard-step stepTitle="Motivation" [navigationSymbol]="{ symbol: '&#xe8e9;', fontFamily: 'feather' }" [style.font-weight]="900">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Motivation</h4>
+            <hr />
+            <h6>The joys of arriving newly at a community can often be short-lived, usually replaced by fears and anxieties of how to fit in and settle.</h6>
+            <h6>The greatest worries are mostly triggered by the uncertainty of whether or not one has all the necessary information required to succeed and thrive in the new comminuty.</h6>
+            <h6>This site is designed to provide an online community where newly arrived members to the community or group can ask for information or assistance across various topics, with answers provided by other members who share similar experiences, knowledge or insight.</h6>
+            <h6>Civitas (Latin word for community), is a place where communal living is fostered through the sharing of information!</h6>
+          </div>
+          <div class="col-sm-12 centered-content">
+            <div class="btn-group mt-10">
+              <button type="button" class="btn btn-primary btn-sm" awNextStep>Continue</button>
+            </div>
+          </div>
+        </div>
+      </aw-wizard-step>
+      <aw-wizard-step stepTitle="Audience" [navigationSymbol]="{ symbol: '&#xe88c;', fontFamily: 'feather' }" [style.font-weight]="900">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Audience</h4>
+            <hr />
+            <h6>The site is created primarily for:</h6>
+            <h6> newly arriving members at a community (e.g. Usask, Saskatoon) or group (e.g. MADMUC Lab, Usask
+                Athletics Team etc). These are the primary target audience.</h6>
+            <h6>existing members of the community inclined to share their knowledge and experience with others, particularly members of the primary target audience.</h6>
+          
+          </div>
+          <div class="col-sm-12 centered-content">
+            <div class="btn-group mt-10">
+              <button type="button" class="btn btn-secondary btn-sm" awPreviousStep>Back</button>
+              <button type="button" class="btn btn-primary btn-sm" awNextStep>Continue</button>
+            </div>
+          </div>
+        </div>
+      </aw-wizard-step>
+      <aw-wizard-step stepTitle="Engagement" [navigationSymbol]="{ symbol: '&#xe840;', fontFamily: 'feather' }">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <h4>Engagement</h4>
+            <hr />
+            <h6>first time visitors to the site can immediately search through existing topics, either featured as blog posts
+                or previously asked questions, to which answers have been provided, without the need to register.
+                </h6>
+            <h6> unrestricted access is also provided to a select number of “Frequently Asked Questions” (FAQs) to quickly get the site’s visitors to gain some immediate insight and value.</h6>
+            <h6>a simple, minimal sign-up process (first name, email and password) is provided for visitors who might:
+                a. have questions or topics not covered in the FAQs or found in the question bank.
+                b. want to comment, rate or provide answers to existing questions.</h6>
+          
+          </div>
+          <div class="col-sm-12 centered-content">
+            <div class="btn-group mt-10">
+              <button type="button" class="btn btn-secondary btn-sm" awPreviousStep>Back</button>
+              <button type="button" class="btn btn-success btn-sm" awResetWizard>Finished</button>
+            </div>
+          </div>
+        </div>
+      </aw-wizard-step>
+    </aw-wizard>
+  </app-card>
+  
+
+
+
+<app-card cardTitle="Explore our Site" [options]="false">
+    <aw-wizard #wizard class="arc-wizard">
+      <aw-wizard-step stepTitle="Home Page">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Home Page</h4>
+            <hr />
+            <h6>A first time visitor to the site in search of answers to a question or topic can simply type out there query in the “search box” and search.</h6>
+            <h6>Search results, which could be references to blog posts or questions, matching the search text are listed with hyperlinks to the respective content.</h6>
+            <h6>If any of the listed topics appear close to the searched text, the visitor can click on the link to go directly to the article or post.</h6>
+            <h6>If not satisfied by the results, the visitor is invited to sign-up in a few easy steps.</h6>
+          
+          </div>
+          <div class="col-sm-12 centered-content">
+            <div class="btn-group mt-10">
+              <button type="button" class="btn btn-primary btn-sm" awNextStep>Continue</button>
+            </div>
+          </div>
+        </div>
+      </aw-wizard-step>
+      <aw-wizard-step stepTitle="Blogs/FAQs">
+        <div class="row">
+          <div class="col-sm-12">
+           
+            <h4>Blogs/FAQs</h4>
+            <hr />
+            <h6>A visitor or user can access the “Blogs” page either through clicking on the search results or by directly navigating to the blogs page.</h6>
+            <h6>However, only registered users can read and make comments.</h6>
+            <h6>The site also provides an “FAQ” page where curated frequently asked questions can be found.</h6>
+            <h6>This resource is also available to the first time visitor to the site – making it one of the many avenues through which visitors can get value without the “pressure” of signing up immediately.</h6>
+
+          </div>
+          <div class="col-sm-12 centered-content">
+            <div class="btn-group mt-10">
+              <button type="button" class="btn btn-secondary btn-sm" awPreviousStep>Back</button>
+              <button type="button" class="btn btn-primary btn-sm" awNextStep>Continue</button>
+            </div>
+          </div>
+        </div>
+      </aw-wizard-step>
+      <aw-wizard-step stepTitle="Active Members">
+        <div class="row">
+          <div class="col-sm-12">
+          
+            <h4>Active Members</h4>
+            <hr />
+            <h6>There is also an “Active Members” page which showcases the profiles of a few active members of the community.</h6>
+            <h6>This page is also available only to registered users.</h6>
+
+
+
+          </div>
+          <div class="col-sm-12 centered-content">
+            <div class="btn-group mt-10">
+              <button type="button" class="btn btn-secondary btn-sm" awPreviousStep>Back</button>
+              <button type="button" class="btn btn-primary btn-sm" awNextStep>Continue</button>
+            </div>
+          </div>
+        </div>
+      </aw-wizard-step>
+      <aw-wizard-step stepTitle="Profile">
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>Profile</h4>
+            <hr />
+            <h6>Go to your profile dashboard to see  your achievements.</h6>
+            <h6>This page is available only to registered users.</h6>
+
+          </div>
+          <div class="col-sm-12 centered-content">
+            <div class="btn-group mt-10">
+              <button type="button" class="btn btn-secondary btn-sm" awPreviousStep>Back</button>
+              <button type="button" class="btn btn-success btn-sm" awResetWizard>Finished</button>
+            </div>
+          </div>
+        </div>
+      </aw-wizard-step>
+    </aw-wizard>
+  </app-card>
+  
+
