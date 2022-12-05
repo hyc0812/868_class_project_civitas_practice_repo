@@ -23,7 +23,7 @@ export class AuthSignupV5Component implements OnInit {
 
   signUpAlert() {
     Swal.fire({
-      title: 'Congrates!',
+      title: 'Congrats!',
       icon: 'success',
       showConfirmButton: false,
       timer: 1500
