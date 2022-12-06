@@ -102,3 +102,6 @@ git commit -m "Message want to add"
 git push origin master
 
 ```
+
+
+Dec. 5 had class presentation for this project.
