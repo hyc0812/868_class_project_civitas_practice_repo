@@ -13,7 +13,7 @@ yarn start
 
 ### screenshots
 
-<img src="https://github.com/hyc0812/868_class_project_civitas_practice_repo/blob/master/screenshots/screenshot01.png" width=800>
+
 <img src="https://github.com/hyc0812/868_class_project_civitas_practice_repo/blob/master/screenshots/screenshot02.png" width=800>
 <img src="https://github.com/hyc0812/868_class_project_civitas_practice_repo/blob/master/screenshots/screenshot03.png" width=800>
 <img src="https://github.com/hyc0812/868_class_project_civitas_practice_repo/blob/master/screenshots/screenshot04.png" width=800>
