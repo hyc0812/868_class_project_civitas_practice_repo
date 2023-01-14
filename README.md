@@ -1,6 +1,6 @@
 This is class project Civitas
 
-Project introduction and final report: [HERE]()
+Project introduction and final report: [HERE](https://github.com/hyc0812/868_class_project_civitas_practice_repo/blob/master/reports/Project_paper.pdf)
 
 ### How to run the project
 
