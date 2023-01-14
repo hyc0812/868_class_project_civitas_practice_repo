@@ -121,5 +121,7 @@ git push origin master
 
 ```
 
+#### Git how to revert previous versions: [HERE](https://stackoverflow.com/questions/4114095/how-do-i-revert-a-git-repository-to-a-previous-commit)
+
 
 Dec. 5 had class presentation for this project.
